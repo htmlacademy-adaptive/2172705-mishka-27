@@ -160,35 +160,35 @@
       </div>
     </footer>
     <!-- Для показа элемента <div> класса 'modal-container' необходимо добавить класс 'modal-container--active' -->
-      <div class="modal-container modal-container--active">
-        <div class="modal-window">
-          <h2 class="modal-window__title">Добавить в корзину</h2>
-          <span class="modal-window__text">Выберите размер:</span>
-          <ul class="modal-window__list">
-            <li class="modal-window__item">
-              <label class="modal-window__control">
-                <input class="modal-window__control-input" type="checkbox" name="size" value="s" checked>
-                <span class="modal-window__control-mark"></span>
-                S
-              </label>
-            </li>
-            <li class="modal-window__item">
-              <label class="modal-window__control">
-                <input class="modal-window__control-input" type="checkbox" name="size" value="m">
-                <span class="modal-window__control-mark"></span>
-                M
-              </label>
-            </li>
-            <li class="modal-window__item">
-              <label class="modal-window__control">
-                <input class="modal-window__control-input" type="checkbox" name="size" value="l">
-                <span class="modal-window__control-mark"></span>
-                L
-              </label>
-            </li>
-          </ul>
-          <button class="modal-window__button button button--form" type="button">Добавить</button>
-        </div>
+    <div class="modal-container modal-container--active">
+      <div class="modal-window">
+        <h2 class="modal-window__title">Добавить в корзину</h2>
+        <span class="modal-window__text">Выберите размер:</span>
+        <ul class="modal-window__list">
+          <li class="modal-window__item">
+            <label class="modal-window__control">
+              <input class="modal-window__control-input" type="checkbox" name="size" value="s" checked>
+              <span class="modal-window__control-mark button button--selected"></span>
+              S
+            </label>
+          </li>
+          <li class="modal-window__item">
+            <label class="modal-window__control">
+              <input class="modal-window__control-input" type="checkbox" name="size" value="m">
+              <span class="modal-window__control-mark button button--unselected"></span>
+              M
+            </label>
+          </li>
+          <li class="modal-window__item">
+            <label class="modal-window__control">
+              <input class="modal-window__control-input" type="checkbox" name="size" value="l">
+              <span class="modal-window__control-mark button button--unselected"></span>
+              L
+            </label>
+          </li>
+        </ul>
+        <button class="modal-window__button button button--secondary" type="button">Добавить</button>
       </div>
+    </div>
   </body>
 </html>
