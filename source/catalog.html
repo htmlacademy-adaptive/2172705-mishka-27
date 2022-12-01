@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка: каталог товаров</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="container">
     <header class="header">
@@ -25,12 +26,12 @@
           </ul>
           <ul class="navigation__list site-list">
             <li class="site-list__item">
-              <a class="site-list__find" href="#">
-                <span class="site-list__find-text site-list__find-text--active">Поиск по сайту</span>
+              <a class="site-list__link site-list__link--find-icon" href="#">
+                <span class="site-list__link-text site-list__link-text--view-text">Поиск по сайту</span>
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__cart" href="#">Корзина: пока пуста</a>
+              <a class="site-list__link site-list__link--cart-icon" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -139,7 +140,7 @@
     <!-- Для показа элемента <div> класса 'modal-container' необходимо добавить класс 'modal-container--open' -->
     <div class="modal-container modal-container--open">
       <div class="modal-window">
-        <h2 class="modal-window__title">Добавить в корзину</h2>
+        <h2 class="modal-window__title">Добавить в&nbsp;корзину</h2>
         <span class="modal-window__text">Выберите размер:</span>
         <form class="modal-window__form" action="https://echo.htmlacademy.ru/" method="get">
           <ul class="modal-window__list">

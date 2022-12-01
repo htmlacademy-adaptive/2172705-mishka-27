@@ -1,0 +1,46 @@
+.contacts {
+  padding: 38px 30px 39px;
+}
+
+.contacts__title {
+  margin: 0 0 28px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.contacts__info-list {
+  margin: 0 0 62px;
+}
+
+.contacts__info-property {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-charcoal;
+}
+
+.contacts__info-value {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-charcoal;
+}
+
+.contacts-info-email {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contacts__map {
+  margin-bottom: 42px;
+
+  background-image: url("../../images/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts__write {
+  display: block;
+}

@@ -1,0 +1,12 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-weight: 700;
+}
+
+.site-list__link {
+  color: $color-default-black;
+  text-decoration: none;
+}

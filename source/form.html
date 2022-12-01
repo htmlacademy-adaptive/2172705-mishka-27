@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка: вязание на заказ</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="container">
     <header class="header">
@@ -25,12 +26,12 @@
           </ul>
           <ul class="navigation__list site-list">
             <li class="site-list__item">
-              <a class="site-list__find" href="#">
-                <span class="site-list__find-text site-list__find-text--active">Поиск по сайту</span>
+              <a class="site-list__link site-list__link--find-icon" href="#">
+                <span class="site-list__link-text site-list__link-text--view-text">Поиск по сайту</span>
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__cart" href="#">Корзина: пока пуста</a>
+              <a class="site-list__link site-list__link--cart-icon" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -49,7 +50,7 @@
             <ul class="form-group__list">
               <li class="form-group__item">
                 <label class="form-group__control">
-                  <input class="form-group__control-input" type="radio" name="type-of-product" value="interior-accessory" checked>
+                  <input class="form-group__control-input" type="radio" name="type-of-product" value="interior" checked>
                   <span class="form-group__control-mark"></span>
                   Аксессуар для интерьера
                 </label>
