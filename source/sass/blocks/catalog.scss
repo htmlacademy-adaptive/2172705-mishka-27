@@ -1,0 +1,46 @@
+.catalog {
+  padding: 30px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+  @include list-reset;
+}
+
+.catalog__link {
+  font-weight: 700;
+  color: $color-default-black;
+  text-decoration: none;
+}
+
+.catalog__item-image {
+  display: block;
+}
+
+.catalog__product-name {
+  margin: 28px 28px 6px;
+
+  font-size: 17px;
+}
+
+.catalog__product-description {
+  display: block;
+  margin: 0 28px 17px;
+
+  font-size: 13px;
+  line-height: 30px;
+  color: $color-charcoal;
+}
+
+.catalog__order-wrapper {
+  margin-right: auto;
+  padding: 22px 0 26px 28px;
+}
+
+.catalog__product-price {
+  font-weight: 700;
+  font-size: 15px;
+}

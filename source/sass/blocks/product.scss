@@ -13,6 +13,7 @@
 .product__status {
   display: block;
   margin-bottom: 14px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -21,9 +22,10 @@
 }
 
 .product__description {
+  margin: 0 0 28px;
+
   font-size: 15px;
   color: $color-charcoal;
-  margin: 0 0 28px;
 }
 
 .product__info-list {
@@ -51,8 +53,9 @@
 
 .product__price {
   display: block;
-  font-weight: 700;
   margin-bottom: 25px;
+
+  font-weight: 700;
   color: $color-charcoal;
 }
 

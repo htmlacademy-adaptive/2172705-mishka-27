@@ -22,15 +22,20 @@
 }
 
 .modal-window__list {
-  list-style: none;
   margin: 0 0 31px;
-  padding: 0;
+
+  @include list-reset;
 }
 
 .modal-window__control {
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+}
+
+// Временное отключение
+.modal-window__control-mark {
+  display: none;
 }
 
 .modal-window__button {

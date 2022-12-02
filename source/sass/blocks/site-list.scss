@@ -1,12 +1,9 @@
 .site-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-  font-weight: 700;
+  @include list-reset;
 }
 
 .site-list__link {
+  font-weight: 700;
   color: $color-default-black;
   text-decoration: none;
 }

@@ -1,0 +1,54 @@
+.form-group {
+  margin: 0 0 33px;
+  padding: 0;
+
+  border: none;
+}
+
+.form-group__title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  line-height: 16px;
+  color: $color-downy;
+  text-transform: uppercase;
+}
+
+.form-group__list {
+  @include list-reset;
+}
+
+.form-group__control {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.form-group__control-text-input {
+  width: 100%;
+  min-height: 52px;
+  margin-bottom: 22px;
+}
+
+.form_group__radiobutton-text {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.form_group__checkbox-text {
+  display: inline-block;
+  margin-bottom: 43px;
+}
+
+.order-form__text {
+  display: block;
+  margin: 17px 0 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-charcoal;
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+}

@@ -4,10 +4,9 @@
 
 .footer__socials-list {
   min-height: 80px;
-  margin: 0;
   padding: 25px 30px 28px;
 
-  list-style: none;
+  @include list-reset;
 }
 
 .footer__developer {

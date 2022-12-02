@@ -1,0 +1,17 @@
+.inner-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 177px;
+  padding: 30px;
+
+  background-color: $color-white-smoke;
+}
+
+.inner-intro__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+}
