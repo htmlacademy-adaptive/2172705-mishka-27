@@ -1,0 +1,44 @@
+.modal-window {
+  padding: 30px 30px 46px;
+}
+
+.modal-window__title {
+  margin: 0 0 14px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-window__text {
+  display: block;
+
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: $color-charcoal;
+}
+
+.modal-window__list {
+  margin: 0 0 31px;
+
+  @include list-reset;
+}
+
+.modal-window__control {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+// Временное отключение
+.modal-window__control-mark {
+  display: none;
+}
+
+.modal-window__button {
+  display: block;
+  width: 100%;
+}

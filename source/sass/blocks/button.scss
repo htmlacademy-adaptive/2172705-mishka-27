@@ -1,0 +1,27 @@
+.button {
+  padding: 16px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-charcoal;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-default-white;
+  border: none;
+  outline: 2px solid $color-charcoal;
+  cursor: pointer;
+
+  &--secondary {
+    padding: 18px;
+
+    font-size: 17px;
+    line-height: 16px;
+    color: $color-default-white;
+
+    background-color: $color-downy;
+    outline: none;
+  }
+}

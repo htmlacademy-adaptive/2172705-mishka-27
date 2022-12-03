@@ -1,0 +1,21 @@
+.footer {
+  background-color: $color-white-smoke;
+}
+
+.footer__socials-list {
+  min-height: 80px;
+  padding: 25px 30px 28px;
+
+  @include list-reset;
+}
+
+.footer__developer {
+  min-height: 80px;
+  padding: 30px 30px 30px 69px;
+}
+
+.footer__developer-text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+}

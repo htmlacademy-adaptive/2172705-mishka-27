@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Мишка: главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body container">
+  <body class="container">
     <header class="header">
       <a class="header__logo logo" href="#">
-        <svg role="img" aria-label="Логотип сайта 'Мишка'." width="86" height="35" viewBox="0 0 86 35" fill="#000000" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.55 26.32c0-3.5-.3-6.9-.4-10.4v-1c0 .1.1.2.1.4.5 1.4 1.1 2.7 1.8 3.9.7 1.2 1.1 2.6 1.5 3.9-.2.2-.3.4-.2.6 0 .2.1.2.2.3.5.5 1.5.2 2.1 0 .2-.1.5-.2.7-.4.3-.2.7-.6.6-1 0-.1 0-.2-.1-.2.4-1.1.6-2.2.8-3.3.2-1.2.7-2.3 1.1-3.5 0 .5.1 1 .1 1.6.2 2.1 0 4.3 0 6.4 0 .7 0 1.4.2 2.1.1.3.3 1.5.2 1.6-.5.5-.4 1.1.3 1.2.8.2 1.8-.1 2.3-.6 1-.9.5-2.4.3-3.6-.4-2 .1-4.2 0-6.2-.1-2.3-.4-4.5-.4-6.8 0-1.8.3-3.7-.3-5.5 0-.2.1-.4.1-.6.2-.9-2.8-.4-3.2.4-.3.2-.4.5-.3.8 0 .1.1.1.1.2-.6 2.7-1.3 5.3-2.2 7.9-.3 1-.7 2-1.1 3-.5-.9-1-1.9-1.4-2.8-1.2-2.9-2.2-5.8-3.6-8.6.2-1.3-2.7-1.2-3.3 0-.7 1.4-.6 2.9-.4 4.4.3 1.7.3 3.4.3 5.1 0 3.3.3 6.7.4 10-.3.3-.4.7-.1 1.2.1.2.3.3.5.5 1.2.7 3.3.2 3.3-1ZM22.75 7.92c-.1-.6-3.4.1-3.3.9.3 1.8.2 3.6.1 5.4 0 1.7.4 3.3.6 5 .2 1.7-.1 3.5.1 5.2.1.8.6 2.3.1 3-.4.4 1.2.3 1.3.3.6-.1 1.5-.3 1.9-.9.6-.7.2-2 0-2.8-.3-1.7-.1-3.5-.2-5.3-.1-1.7-.6-3.3-.7-4.9.3-2 .4-3.9.1-5.9ZM25.95 14.62c.9 2.5 4.6 1.3 6.6 1.5 3.2.2 2.3 4.6 2.3 6.6 0 1.1 1 2.9.2 3.8-.5.6-1.7.6-2.4.6-.7.1-1.9.3-2.3-.4-.8-1.2.1-3.2-.1-4.6-.1-.8-3.4-.1-3.3.9.3 2.2-1.2 5.2 2 5.6 2.1.2 4.4-.1 6.3-.8 1-.3 1.9-.8 2.7-1.5.9-.8.6-2 .4-3-.6-2.5.6-5.3-1-7.5-1.7-2.3-5-.7-7.2-1.3-1.2-.2-1.2-1.8-1.2-2.8 0-1.2-.1-2.3-.2-3.5-.1-.9 0-1.8.6-2.4.1-.1.7-.3.7-.3.3-.1.6-.1.9-.1 1.3-.1 3.9.2 3.4 2.1-.2.9 3 .4 3.3-.5 1-3.9-6.1-3.1-8.2-2.6-1.9.5-3.9 1.6-4 3.7-.1 1 .2 2 .3 3 0 1.2-.3 2.4.2 3.5ZM40.35 16.52c-.1 1.8-.2 3.6-.2 5.4 0 .9.1 1.8.3 2.8.1.8.4 2 .2 2.8-.2.6 3 .2 3.3-.6.5-1.5-.2-3.4-.3-4.9-.1-1.5 0-2.9.1-4.4 1.7-.1 3.4-.2 5.1 0l.3 3.5c.1 1 .2 1.9.2 2.9 0 .9.1 2.1-.2 2.9-.7 1.7 2.7 1.6 3.1.3.6-1.6.4-3.5.3-5.2-.3-2.2-.6-4.2-.6-6.3-.1-3.2-.6-6.3-.6-9.5 0-1.7-3.3-1.1-3.3.3 0 3 .4 6 .6 9.1v.2c-1.6 0-3.3.1-4.9.2.2-3.9-.5-7.8-.4-11.7 0-.5-3.3-.1-3.3.9-.2 3.8.4 7.5.3 11.3ZM54.45 21.82c-.3.3-.2.4 0 .5 0 1.5 0 2.9-.2 4.4-.4.6.4 1 .9 1h.1c.6 0 2.2-.3 2.3-1.1.2-1.8.2-3.5.2-5.3 1.3-1.4 2.4-3.1 3.4-4.7.6 1.2 1.2 2.5 1.7 3.9.7 2.3 1.9 4.4 2.6 6.8.5 1.5 3.8.6 3.3-.9-.7-2.3-1.9-4.5-2.6-6.8-.8-2.3-2-4.4-3-6.6.8-1.6 1.7-3.3 2.5-5 .7-1.5 1.2-3.2 2.6-4.3.5-.4.5-.8-.2-.8-.7-.1-1.7.2-2.3.6-1.3 1-2 2.2-2.7 3.6-.8 1.7-1.6 3.4-2.5 5.1-.1.1-.1.2-.2.4-.4.3-.7.6-.5 1.1-.7 1.3-1.3 2.6-2.1 3.9-.3-4.7-.8-9.3-1-14 0-1.1-3.3-.4-3.3.9.2 5.7 1 11.5 1 17.3ZM85.95 15.62c-.2-.7-1.2-.7-1.9-.6v-.8c-.1-2.2-.1-4.5-.3-6.8-.2-2.1-1.3-2.8-3.3-2.7-2 .1-4.4.4-6.3 1.2a5.9 5.9 0 0 0-3.8 4.8c-.5 2.5.2 5.2.3 7.8.1 3 .1 5.9.1 8.9 0 .5 3.3 0 3.3-.9v-7c0-.7 0-1.4-.1-2.1 1.2-.5 3.1 0 4.3.1.9.1 1.8-.1 2.7-.2 0 1.9.1 3.9.2 5.9 0 1 .4 3-.3 3.8-.4.4 1.2.3 1.3.3.7-.1 1.5-.3 1.9-.9.8-.9.4-3.2.3-4.3-.1-1.6-.1-3.2-.1-4.8.8-.4 1.9-1 1.7-1.7Zm-6.6-.2c-1.9 0-3.8-.3-5.7 0l-.3-3.2c-.1-2 .1-4.7 1.9-5.9.5-.3 1.4-.3 2-.4.8-.1 1.6-.3 2.4.2 1 .7.8 3.1.8 4.1 0 1.7.2 3.4.3 5.1-.5.1-1 .1-1.4.1ZM19.15 4.12c0 .2 0 .4.1.5v.4c.1.2.2.3.4.4.3.2.7.2 1.1.2.4 0 .9-.2 1.2-.4l.2-.2c.4-.3.8-.7.6-1.1-.4-.9-.4-1.9-.3-2.9 0-.8-.8-1.1-1.5-1-.6.1-1.8.5-1.8 1.3s-.1 1.7.1 2.5c-.1.1-.1.2-.1.3ZM80.65 33.32c-1.6-.6-3.3-.6-4.9-.8l-4.9-.6c-1.6.1-3.3 0-5 .1l-4.9.3c-6.5.3-13 .3-19.5.1-6.5-.1-13-.5-19.6-.5-3.3 0-6.6.1-9.9.3-1.6.3-3.2.5-4.9.9-1.6.4-3.1.9-4.8 1 1.6.4 3.3.3 5 .3 1.6 0 3.2.1 4.9.2 3.2-.2 6.5-.2 9.7-.3 6.5 0 13 .3 19.6.5 6.5.1 13.1.2 19.7-.1l4.9-.3c1.6-.1 3.2-.1 4.8-.1 1.6-.1 3.3-.3 4.9-.5 1.7-.2 3.2-.6 4.9-.5h.1v-.6c0 .4 0 .5-.1.6Z"/>
-        </svg>
+        <img src="images/mishka-logo-mobile.svg" width="86" height="25" alt="Логотип сайта 'Мишка'">
       </a>
-      <nav class="navigation">
-        <button class="navigation__toggle">
-          <span class="visually-hidden">Открыть меню навигации.</span>
+      <!-- Для показа элемента <nav> класса 'navigation' необходимо добавить класс 'navigation--open' -->
+      <nav class="navigation navigation--open">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
         </button>
-        <!-- Для показа элемента <div> класса 'popover' необходимо добавить класс 'popover--active' -->
-        <div class="popover popover--active">
-          <ul class="popover__list site-list">
+        <div class="navigation__menu">
+          <ul class="navigation__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -25,15 +24,14 @@
               <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="popover__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__find" href="#">
-                <!-- Для показа элемента <span> класса 'user-list__find-text' необходимо добавить класс 'user-list__find-text--active' -->
-                <span class="user-list__find-text user-list__find-text--active">Поиск по сайту</span>
+          <ul class="navigation__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--find-icon" href="#">
+                <span class="site-list__link-text site-list__link-text--view-text">Поиск по сайту</span>
               </a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__cart" href="#">Корзина: пока пуста</a>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--cart-icon" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -42,20 +40,20 @@
     <main>
       <section class="index-intro">
         <h1 class="index-intro__title">Милые штуки ручной работы для дома</h1>
-        <ul class="index-intro__products">
-          <li class="index-intro__product">
-            <a class="index-intro__link" href="#">Предметы интерьера</a>
+        <ul class="index-intro__list">
+          <li class="index-intro__item">
+            <a class="index-intro__link index-intro__link--interior" href="#">Предметы<br> интерьера</a>
           </li>
-          <li class="index-intro__product">
-            <a class="index-intro__link index-intro__link--dark" href="#">Детские игрушки</a>
+          <li class="index-intro__item">
+            <a class="index-intro__link index-intro__link--toy" href="#">Детские<br> игрушки</a>
           </li>
         </ul>
       </section>
       <section class="product">
-        <h2 class="product__title title">Вязаные корзинки</h2>
+        <h2 class="product__title">Вязаные корзинки</h2>
         <span class="product__status">Товар недели</span>
-        <p class="product__description text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-        <dl class="product__info-list text">
+        <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+        <dl class="product__info-list">
           <div class="product__info-item">
             <dt class="product__info-property">Цвет:</dt>
             <dd class="product__info-value">тиффани/серый</dd>
@@ -69,25 +67,27 @@
             <dd class="product__info-value">15 см</dd>
           </div>
         </dl>
-        <img class="product__picture" src="images/product-index.jpg" width="260" height="315" alt="Вязаные корзинки.">
-        <span class="product__price">Цена: 990 руб.</span>
-        <a class="product__order button" href="#">Заказать</a>
+        <img class="product__picture" src="images/product-of-the-week.jpg" width="260" height="315" alt="Вязаные корзинки.">
+        <div class="product__order-wrapper">
+          <span class="product__price">Цена: 990 руб.</span>
+          <a class="product__order button" href="#">Заказать</a>
+        </div>
       </section>
       <section class="about">
-        <h2 class="about__title title">Коротко о нас:</h2>
+        <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item about__item--ecology">Экологически чистые материалы</li>
-          <li class="about__item about__item--price">Скандинавский стиль по российской цене</li>
-          <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__item--feelings">Связано вручную с любовью и умилением</li>
-          <li class="about__item about__item--support">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--packaging">Поставляется в подарочной упаковке</li>
+          <li class="about__item about__item--ecology">Экологически<br> чистые материалы</li>
+          <li class="about__item about__item--price">Скандинавский стиль<br> по российской цене</li>
+          <li class="about__item about__item--likes">Увеличивает лайки<br> на фотографиях</li>
+          <li class="about__item about__item--feelings">Связано вручную<br> с любовью и умилением</li>
+          <li class="about__item about__item--support">Поддержка отечественного<br> производителя</li>
+          <li class="about__item about__item--packaging">Поставляется<br> в подарочной упаковке</li>
         </ul>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title title">Отзывы</h2>
-        <blockquote class="reviews__wrapper">
-          <p class="reviews__text text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+        <h2 class="reviews__title">Отзывы</h2>
+        <blockquote class="reviews__feedback">
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
             В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="reviews__author-info">
             <span class="reviews__author-name">Анастасия Красильникова</span>
@@ -105,8 +105,8 @@
         <a class="reviews__add button" href="#">Написать</a>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title title">Контакты</h2>
-        <dl class="contacts__info-list text">
+        <h2 class="contacts__title">Контакты</h2>
+        <dl class="contacts__info-list">
           <div class="contacts__info-item">
             <dt class="contacts__info-property">e-mail:</dt>
             <dd class="contacts__info-value">
@@ -118,7 +118,7 @@
             <dd class="contacts__info-value">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</dd>
           </div>
         </dl>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1syYpVw8pQw6OCihnjYQYj5h4RMoLh5I&ehbc=2E312F" width="320" height="454"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/d/embed?mid=1syYpVw8pQw6OCihnjYQYj5h4RMoLh5I&ehbc=2E312F" width="320" height="454"></iframe>
         <a class="contacts__write button" href="#">Напишите нам</a>
       </section>
     </main>
@@ -159,35 +159,37 @@
         </a>
       </div>
     </footer>
-    <!-- Для показа элемента <div> класса 'modal-container' необходимо добавить класс 'modal-container--active' -->
-    <div class="modal-container modal-container--active">
+    <!-- Для показа элемента <div> класса 'modal-container' необходимо добавить класс 'modal-container--open' -->
+    <div class="modal-container modal-container--open">
       <div class="modal-window">
-        <h2 class="modal-window__title">Добавить в корзину</h2>
+        <h2 class="modal-window__title">Добавить в&nbsp;корзину</h2>
         <span class="modal-window__text">Выберите размер:</span>
-        <ul class="modal-window__list">
-          <li class="modal-window__item">
-            <label class="modal-window__control">
-              <input class="modal-window__control-input" type="checkbox" name="size" value="s" checked>
-              <span class="modal-window__control-mark button button--selected"></span>
-              S
-            </label>
-          </li>
-          <li class="modal-window__item">
-            <label class="modal-window__control">
-              <input class="modal-window__control-input" type="checkbox" name="size" value="m">
-              <span class="modal-window__control-mark button button--unselected"></span>
-              M
-            </label>
-          </li>
-          <li class="modal-window__item">
-            <label class="modal-window__control">
-              <input class="modal-window__control-input" type="checkbox" name="size" value="l">
-              <span class="modal-window__control-mark button button--unselected"></span>
-              L
-            </label>
-          </li>
-        </ul>
-        <button class="modal-window__button button button--secondary" type="button">Добавить</button>
+        <form class="modal-window__form" action="https://echo.htmlacademy.ru/" method="get">
+          <ul class="modal-window__list">
+            <li class="modal-window__item">
+              <label class="modal-window__control">
+                <input class="modal-window__control-input" type="radio" name="size" value="s" checked>
+                <span class="modal-window__control-mark button button--selected"></span>
+                S
+              </label>
+            </li>
+            <li class="modal-window__item">
+              <label class="modal-window__control">
+                <input class="modal-window__control-input" type="radio" name="size" value="m">
+                <span class="modal-window__control-mark button button--unselected"></span>
+                M
+              </label>
+            </li>
+            <li class="modal-window__item">
+              <label class="modal-window__control">
+                <input class="modal-window__control-input" type="radio" name="size" value="l">
+                <span class="modal-window__control-mark button button--unselected"></span>
+                L
+              </label>
+            </li>
+          </ul>
+          <button class="modal-window__button button button--secondary" type="submit">Добавить</button>
+        </form>
       </div>
     </div>
   </body>

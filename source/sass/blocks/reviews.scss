@@ -1,0 +1,56 @@
+.reviews {
+  padding: 30px 30px 45px;
+}
+
+.reviews__title {
+  margin: 0 0 14px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__feedback {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0 0 33px;
+
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-charcoal;
+}
+
+.reviews__author-info {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.reviews__author-mail {
+  font-style: normal;
+  color: $color-charcoal;
+}
+
+.reviews__slider-buttons {
+  margin-bottom: 38px;
+}
+
+.reviews__slider-button {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+
+  background-color: $color-default-white;
+  border: 1px solid $color-whisper;
+  cursor: pointer;
+}
+
+.reviews__add {
+  display: block;
+}

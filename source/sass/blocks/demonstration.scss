@@ -1,0 +1,27 @@
+.demonstration {
+  padding: 0 30px 58px;
+}
+
+.demonstration__title {
+  margin: 0;
+  padding: 22px 13px 26px 91px;
+
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.demonstration__video {
+  margin-bottom: 35px;
+}
+
+.demonstration__description {
+  margin: 0 0 41px 34px;
+
+  font-size: 13px;
+  color: $color-charcoal;
+}
+
+.demonstration__order {
+  display: block;
+  margin: 0 33px 34px;
+}
