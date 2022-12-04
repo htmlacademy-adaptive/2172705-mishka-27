@@ -3,10 +3,9 @@
 }
 
 .footer__socials-list {
+  @include list-reset;
   min-height: 80px;
   padding: 25px 30px 28px;
-
-  @include list-reset;
 }
 
 .footer__developer {

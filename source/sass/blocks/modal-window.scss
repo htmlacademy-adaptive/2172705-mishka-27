@@ -22,9 +22,8 @@
 }
 
 .modal-window__list {
-  margin: 0 0 31px;
-
   @include list-reset;
+  margin: 0 0 31px;
 }
 
 .modal-window__control {

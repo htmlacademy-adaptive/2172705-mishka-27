@@ -3,11 +3,11 @@
 }
 
 .catalog__list {
+  @include list-reset;
   display: flex;
   flex-direction: column;
 
   gap: 30px;
-  @include list-reset;
 }
 
 .catalog__link {
