@@ -2,9 +2,23 @@
   padding: 17px 29px 55px;
 }
 
-.order-form__text {
+.order-form__intro-text {
   margin: 0 0 29px;
 
   font-size: 13px;
   color: $color-charcoal;
+}
+
+.order-form__info-text {
+  display: block;
+  margin: 17px 0 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-charcoal;
+}
+
+.order-form__button {
+  display: block;
+  width: 100%;
 }
