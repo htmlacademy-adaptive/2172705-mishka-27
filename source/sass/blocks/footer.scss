@@ -2,6 +2,14 @@
   background-color: $color-white-smoke;
 }
 
+.footer__logo {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: block;
+  }
+}
+
 .footer__socials-list {
   @include list-reset;
   min-height: 80px;
@@ -18,3 +26,4 @@
   font-size: 19px;
   line-height: 18px;
 }
+
