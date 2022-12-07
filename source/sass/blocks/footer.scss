@@ -1,5 +1,12 @@
 .footer {
   background-color: $color-white-smoke;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 51px 50px 58px;
+  }
 }
 
 .footer__logo {
@@ -14,11 +21,19 @@
   @include list-reset;
   min-height: 80px;
   padding: 25px 30px 28px;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
 }
 
 .footer__developer {
   min-height: 80px;
   padding: 30px 30px 30px 69px;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
 }
 
 .footer__developer-text {
