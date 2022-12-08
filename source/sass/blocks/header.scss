@@ -1,4 +1,13 @@
 .header {
-  min-height: 79px;
-  padding: 22px 30px;
+  @media (min-width: $vp-768) {
+
+  }
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }

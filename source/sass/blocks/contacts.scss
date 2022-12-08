@@ -1,9 +1,9 @@
 .contacts {
-  padding: 38px 30px 39px;
+  padding: 38px 0 39px;
 }
 
 .contacts__title {
-  margin: 0 0 28px;
+  margin: 0 29px 28px;
 
   font-weight: 700;
   font-size: 25px;
@@ -11,7 +11,7 @@
 }
 
 .contacts__info-list {
-  margin: 0 0 62px;
+  margin: 0 29px 62px;
 }
 
 .contacts__info-property {
@@ -41,6 +41,7 @@
   background-position: center;
 }
 
-.contacts__write {
+.contacts__button {
   display: block;
+  margin: 0 30px;
 }

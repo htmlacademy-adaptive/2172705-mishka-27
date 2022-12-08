@@ -43,6 +43,14 @@
   }
 }
 
+.demonstration__video-preview {
+  display: block;
+  //Заглушка
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
 .demonstration__description {
   padding: 35px 0 41px 34px;
   margin: 0;

@@ -1,7 +1,37 @@
 .navigation {
+  position: relative;
+}
+
+.navigation .navigation__menu {
+  display: none;
+}
+
+.navigation--open .navigation__menu {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background-color: $color-default-white;
+}
+
+.navigation__new-sale-list {
   display: none;
 
-  &--open {
-    display: block;
+  @media (min-width: $vp-1150) {
+    @include list-reset;
+    display: flex;
+  }
+}
+
+.navigation__new-sale-list-link {
+  @media (min-width: $vp-1150) {
+    font-weight: 700;
+    font-size: 15px;
+    color: $color-default-black;
+    text-decoration: none;
   }
 }

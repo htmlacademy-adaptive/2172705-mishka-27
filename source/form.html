@@ -10,10 +10,10 @@
   <body class="container">
     <header class="header">
       <a class="header__logo logo" href="index.html">
-        <img src="images/logo-mishka-mobile.svg" width="86" height="25" alt="Логотип сайта 'Мишка'.">
+        <img src="images/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип сайта 'Мишка'.">
       </a>
       <!-- Для показа элемента <nav> класса 'navigation' необходимо добавить класс 'navigation--open' -->
-      <nav class="navigation navigation--open">
+      <nav class="navigation">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
         </button>
@@ -36,12 +36,21 @@
               <a class="site-list__link site-list__link--cart-icon" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
+          <ul class="navigation__new-sale-list">
+            <li class="navigation__new-sale-list-item">
+              <a class="navigation__new-sale-list-link" href="#">Новые поступления</a>
+            </li>
+            <li class="navigation__new-sale-list-item">
+              <a class="navigation__new-sale-list-link" href="#">Распродажа</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
     <main>
       <section class="inner-intro">
         <h1 class="inner-intro__title">Вязание на заказ</h1>
+        <span class="inner-intro__delivery">Бесплатная доставка по России</span>
       </section>
       <section class="order-form">
         <h2 class="visually-hidden">Форма заказа.</h2>
