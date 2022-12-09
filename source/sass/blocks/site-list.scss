@@ -1,5 +1,20 @@
 .site-list {
   @include list-reset;
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 41px;
+    max-width: 400px;
+    top: calc(100% + 20px);
+    z-index: 1;
+    left: 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    position: static;
+  }
 }
 
 .site-list__link {
@@ -9,4 +24,14 @@
   font-weight: 700;
   color: $color-default-black;
   text-decoration: none;
+
+  @media (min-width: $vp-768) {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    font-size: 17px;
+    padding: 32px 0;
+  }
 }

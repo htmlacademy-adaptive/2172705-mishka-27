@@ -29,7 +29,15 @@
 }
 
 .product__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
   margin: 0 0 41px;
+}
+
+.product__info-item {
+  display: grid;
+  grid-template-columns: 98px 162px;
 }
 
 .product__info-property {
@@ -54,11 +62,12 @@
 .product__price {
   display: block;
   margin-bottom: 25px;
+  text-align: center;
 
   font-weight: 700;
   color: $color-charcoal;
 }
 
-.product__order {
+.product__button {
   display: block;
 }

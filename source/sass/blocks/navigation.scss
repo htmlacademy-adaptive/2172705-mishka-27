@@ -4,6 +4,14 @@
 
 .navigation .navigation__menu {
   display: none;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
+
+  @media (min-width: $vp-1150) {
+    justify-content: space-between;
+  }
 }
 
 .navigation--open .navigation__menu {
@@ -16,6 +24,13 @@
   width: 100%;
 
   background-color: $color-default-white;
+
+  @media (min-width: $vp-768) {
+    position: static;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .navigation__new-sale-list {
@@ -23,7 +38,16 @@
 
   @media (min-width: $vp-1150) {
     @include list-reset;
+
+    position: absolute;
+    max-width: 770px;
+    top: calc(100% + 20px);
+    left: 0;
+    z-index: 1;
+
     display: flex;
+
+    gap: 63px;
   }
 }
 
@@ -33,5 +57,11 @@
     font-size: 15px;
     color: $color-default-black;
     text-decoration: none;
+  }
+}
+
+.navigation__toggle {
+  @media (min-width: $vp-768) {
+    display: none;
   }
 }

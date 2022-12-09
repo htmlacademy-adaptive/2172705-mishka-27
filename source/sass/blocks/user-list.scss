@@ -1,5 +1,16 @@
 .user-list {
   @include list-reset;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin-left: 0;
+  }
 }
 
 .user-list__link {
@@ -9,4 +20,19 @@
   font-weight: 700;
   color: $color-default-black;
   text-decoration: none;
+
+  @media (min-width: $vp-768) {
+    padding: 32px;
+
+    &--cart-icon {
+      padding: 32px 0 32px 85px;
+    }
+  }
 }
+
+.user-list__find-link-text {
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+}
+
