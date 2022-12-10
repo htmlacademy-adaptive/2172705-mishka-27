@@ -88,14 +88,16 @@
   text-decoration: none;
 
   @media (min-width: $vp-768) {
+    padding: 25px 167px 34px 36px;
+
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 167px 34px 36px;
   }
 
   @media (min-width: $vp-1150) {
+    padding: 25px 350px 34px 36px;
+
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 350px 34px 36px;
   }
 }

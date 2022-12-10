@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 30px 58px;
+
   outline: 1px solid $color-whisper;
 
   @media (min-width: $vp-768) {
@@ -9,8 +10,9 @@
   }
 
   @media (min-width: $vp-1150) {
-    margin: 0 50px 105px;
     display: grid;
+    margin: 0 50px 105px;
+
     grid-template-columns: auto 367px;
     grid-template-rows: repeat(3, min-content);
   }
@@ -24,8 +26,9 @@
   font-size: 17px;
 
   @media (min-width: $vp-768) {
-    font-size: 20px;
     padding: 41px 40px 25px 107px;
+
+    font-size: 20px;
   }
 
   @media (min-width: $vp-1150) {
@@ -45,21 +48,21 @@
 
 .demonstration__video-preview {
   display: block;
-  //Заглушка
-  object-fit: cover;
   width: 100%;
   height: auto;
+
+  object-fit: cover;
 }
 
 .demonstration__description {
-  padding: 35px 0 41px 34px;
   margin: 0;
+  padding: 35px 0 41px 34px;
 
   font-size: 13px;
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
-    padding: 0px 40px 41px;
+    padding: 0 40px 41px;
 
     font-size: 15px;
   }

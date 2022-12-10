@@ -7,10 +7,12 @@
 
   @media (min-width: $vp-1150) {
     display: grid;
+    padding: 71px 49px 105px 224px;
+
+    column-gap: 50px;
+
     grid-template-columns: 300px 527px;
     grid-template-rows: repeat(3, auto);
-    column-gap: 50px;
-    padding: 71px 49px 105px 224px;
   }
 }
 
@@ -23,12 +25,14 @@
 
   @media (min-width: $vp-768) {
     margin: 0 50px 57px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $vp-1150) {
     margin: 62px 0 34px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -37,13 +41,15 @@
 .contacts__info-list {
   display: flex;
   flex-direction: column;
-  gap: 38px;
   margin: 0 29px 62px;
+
+  gap: 38px;
 
   @media (min-width: $vp-768) {
     flex-direction: row;
-    gap: 50px;
     margin: 0 50px 49px;
+
+    gap: 50px;
   }
 
   @media (min-width: $vp-1150) {
@@ -54,10 +60,12 @@
 
 .contacts__info-item {
   display: grid;
+
   grid-template-columns: 78px 183px;
 
   @media (min-width: $vp-768) {
     display: flex;
+
     gap: 25px;
   }
 }
@@ -90,8 +98,8 @@
 }
 
 .contacts__map {
-  margin-bottom: 42px;
   width: 100%;
+  margin-bottom: 42px;
 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
@@ -105,8 +113,9 @@
   @media (min-width: $vp-1150) {
     width: 527px;
     margin: 0;
-    grid-row: 1/-1;
+
     grid-column: 2/-1;
+    grid-row: 1/-1;
   }
 }
 

@@ -1,6 +1,7 @@
 .header {
   @media (min-width: $vp-768) {
     position: relative;
+
     padding: 0 50px;
   }
 }
@@ -14,15 +15,17 @@
 
   @media (min-width: $vp-768) {
     position: absolute;
-    margin: 0;
     top: 22px;
     left: 48px;
     z-index: 1;
+
+    margin: 0;
   }
 
   @media (min-width: $vp-1150) {
     top: 9px;
     left: 50%;
-    transform:translateX(-50%);
+
+    transform: translateX(-50%);
   }
 }

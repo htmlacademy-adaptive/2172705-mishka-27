@@ -40,12 +40,12 @@
     @include list-reset;
 
     position: absolute;
-    max-width: 770px;
     top: calc(100% + 20px);
     left: 0;
     z-index: 1;
 
     display: flex;
+    max-width: 770px;
 
     gap: 63px;
   }

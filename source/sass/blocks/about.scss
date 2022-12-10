@@ -19,6 +19,7 @@
 
   @media (min-width: $vp-768) {
     margin: 0 0 41px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -34,8 +35,9 @@
 
   @media (min-width: $vp-768) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
     gap: 55px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

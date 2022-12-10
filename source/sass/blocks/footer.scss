@@ -19,6 +19,7 @@
 
 .footer__socials-list {
   @include list-reset;
+
   min-height: 80px;
   padding: 25px 30px 28px;
 
@@ -41,4 +42,3 @@
   font-size: 19px;
   line-height: 18px;
 }
-
