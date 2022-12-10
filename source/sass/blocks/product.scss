@@ -142,6 +142,9 @@
 
     grid-column: 2/-1;
     grid-row: 2/-1;
+    //Временно
+    width: auto;
+    height: 100%;
   }
 
   @media (min-width: $vp-1150) {
