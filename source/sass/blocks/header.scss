@@ -17,11 +17,12 @@
     margin: 0;
     top: 22px;
     left: 48px;
+    z-index: 1;
   }
 
   @media (min-width: $vp-1150) {
     top: 9px;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    transform:translateX(-50%);
   }
 }

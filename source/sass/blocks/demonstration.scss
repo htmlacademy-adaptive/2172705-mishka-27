@@ -1,15 +1,15 @@
 .demonstration {
-  padding: 0 30px 58px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 58px;
+  outline: 1px solid $color-whisper;
 
   @media (min-width: $vp-768) {
-    display: flex;
-    flex-direction: column;
-
-    padding: 0 50px 64px;
+    margin: 0 50px 64px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 0 50px 105px;
+    margin: 0 50px 105px;
     display: grid;
     grid-template-columns: auto 367px;
     grid-template-rows: repeat(3, min-content);
@@ -69,7 +69,7 @@
   }
 }
 
-.demonstration__order {
+.demonstration__button {
   display: block;
   margin: 0 33px 34px;
 

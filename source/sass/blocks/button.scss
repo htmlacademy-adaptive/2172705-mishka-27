@@ -28,4 +28,12 @@
     background-color: $color-downy;
     outline: none;
   }
+
+  &--selected {
+    outline-color: $color-downy;
+  }
+
+  &--unselected {
+    outline-color: rgba($color-charcoal, 0.1);
+  }
 }
