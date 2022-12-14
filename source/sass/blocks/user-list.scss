@@ -1,30 +1,22 @@
-.site-list {
+.user-list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 
   @media (min-width: $vp-768) {
-    position: absolute;
-    top: calc(100% + 20px);
-    left: 0;
-    z-index: 1;
-
     display: flex;
     flex-wrap: wrap;
     max-width: 400px;
-
-    gap: 41px;
+    margin-left: auto;
   }
 
   @media (min-width: $vp-1150) {
-    position: static;
-
-    gap: 72px;
+    margin-left: 0;
   }
 }
 
-.site-list__link {
+.user-list__link {
   display: block;
   padding: 28px 0 28px 76px;
 
@@ -33,14 +25,16 @@
   text-decoration: none;
 
   @media (min-width: $vp-768) {
-    padding: 0;
+    padding: 32px;
 
-    font-size: 15px;
+    &--cart-icon {
+      padding: 32px 0 32px 85px;
+    }
   }
+}
 
-  @media (min-width: $vp-1150) {
-    padding: 32px 0;
-
-    font-size: 17px;
+.user-list__find-link-text {
+  @media (min-width: $vp-768) {
+    display: none;
   }
 }

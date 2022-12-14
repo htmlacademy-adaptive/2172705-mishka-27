@@ -1,23 +1,97 @@
 .about {
   padding: 30px;
+
+  @media (min-width: $vp-768) {
+    padding: 55px 50px 83px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 68px 49px 90px 225px;
+  }
+}
+
+.about__container {
+  max-width: 400px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $vp-1150) {
+    max-width: 960px;
+  }
 }
 
 .about__title {
-  margin: 0;
+  margin: 0 0 28px;
 
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 41px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about__list {
-  @include list-reset;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+
+    gap: 55px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .about__item {
-  padding-top: 83px;
+  padding-top: 54px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 56px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--ecology {
+      order: 1;
+    }
+
+    &--style {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--feelings {
+      order: 2;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--packaging {
+      order: 6;
+    }
+  }
 }

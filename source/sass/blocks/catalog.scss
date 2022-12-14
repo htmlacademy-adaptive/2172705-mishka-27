@@ -1,13 +1,45 @@
 .catalog {
   padding: 30px;
+
+  @media (min-width: $vp-768) {
+    padding: 67px 50px 53px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 111px 50px 57px;
+  }
 }
 
 .catalog__list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 
   gap: 30px;
-  @include list-reset;
+
+  @media (min-width: $vp-768) {
+    gap: 54px;
+  }
+
+  @media (min-width: $vp-1150) {
+    display: grid;
+
+    gap: 51px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.catalog__item {
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
+
+  @media (min-width: $vp-1150) {
+    flex-direction: column;
+  }
 }
 
 .catalog__link {
@@ -18,29 +50,91 @@
 
 .catalog__item-image {
   display: block;
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+
+  @media (min-width: $vp-768) {
+    width: auto;
+    height: 100%;
+  }
+
+  @media (min-width: $vp-1150) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .catalog__product-name {
-  margin: 28px 28px 6px;
+  margin: 0 0 7px;
 
   font-size: 17px;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+  }
 }
 
 .catalog__product-description {
   display: block;
-  margin: 0 28px 17px;
+  margin: 0;
 
   font-size: 13px;
   line-height: 30px;
   color: $color-charcoal;
-}
 
-.catalog__order-wrapper {
-  margin-right: auto;
-  padding: 22px 0 26px 28px;
+  @media (min-width: $vp-768) {
+    font-size: 15px;
+  }
 }
 
 .catalog__product-price {
   font-weight: 700;
   font-size: 15px;
+
+  @media (min-width: $vp-768) {
+    font-size: 17px;
+  }
+}
+
+.catalog__item-wrapper {
+  width: 100%;
+
+  outline: 1px solid $color-whisper;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $vp-1150) {
+    flex-grow: 1;
+  }
+}
+
+.catalog__item-info-wrapper {
+  padding: 28px 28px 17px;
+
+  @media (min-width: $vp-768) {
+    padding: 27px 34px 17px;
+  }
+
+  @media (min-width: $vp-1150) {
+    flex-grow: 1;
+    padding: 27px 28px 37px;
+  }
+}
+
+.catalog__item-order-wrapper {
+  margin-top: auto;
+  padding: 22px 50px 26px 28px;
+
+  @media (min-width: $vp-768) {
+    padding: 24px 50px 26px 34px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 23px 50px 26px 27px;
+  }
 }

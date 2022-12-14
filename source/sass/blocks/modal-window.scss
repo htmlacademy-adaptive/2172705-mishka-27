@@ -1,5 +1,22 @@
+.modal-container {
+  display: none;
+
+  &--open {
+    display: block;
+  }
+}
+
+
 .modal-window {
   padding: 30px 30px 46px;
+
+  outline: 1px solid $color-silver;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $vp-768) {
+    width: 566px;
+    padding: 38px 106px 46px;
+  }
 }
 
 .modal-window__title {
@@ -10,21 +27,43 @@
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 11px;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .modal-window__text {
   display: block;
+  margin-bottom: 22px;
 
   font-size: 15px;
   line-height: 30px;
   text-align: center;
   color: $color-charcoal;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+  }
 }
 
 .modal-window__list {
+  display: grid;
   margin: 0 0 31px;
+  padding: 0;
 
-  @include list-reset;
+  list-style: none;
+
+  gap: 7px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (min-width: $vp-768) {
+  }
 }
 
 .modal-window__control {
@@ -33,12 +72,18 @@
   line-height: 16px;
 }
 
-// Временное отключение
-.modal-window__control-mark {
+.modal-window__control-input {
   display: none;
 }
 
-.modal-window__button {
+.modal-window__control-mark {
   display: block;
+  padding: 18px 0;
+
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.modal-window__button {
   width: 100%;
 }

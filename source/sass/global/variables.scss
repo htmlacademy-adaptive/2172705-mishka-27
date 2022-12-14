@@ -5,17 +5,20 @@
 
 $color-default-black: #000000;
 $color-default-white: #ffffff;
+$color-transparent: rgba(255, 255, 255, 0);
 
 // Project-palette
 // Для нейминга используется https://www.htmlcsscolor.com/hex/63D1BB
 
 $color-whisper: #ececec;
 $color-white-smoke: #f1f1f1;
+$color-snow: #fafafa;
 $color-silver: #c6c6c6;
 $color-charcoal: #444444;
 $color-aubergine: #231f20;
 $color-downy: #63d1bb;
 $color-downy-mod: #62d1ba;
+$color-downy-alter: #59d5bc;
 $color-puerto-rico: #56c3b2;
 $color-puerto-rico-mod: #46c1ae;
 $color-monte-carlo: #6bc6b3;
@@ -24,3 +27,9 @@ $color-monte-carlo: #6bc6b3;
 //--------------------------------------
 
 $ff-open-sans: "Open Sans", "Arial", sans-serif;
+
+// Viewports
+//--------------------------------------
+
+$vp-768: 768px;
+$vp-1150: 1150px;

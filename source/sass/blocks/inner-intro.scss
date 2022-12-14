@@ -1,11 +1,28 @@
 .inner-intro {
+  padding: 0 30px;
+
+  background-color: $color-white-smoke;
+
+  @media (min-width: $vp-768) {
+    padding: 0 50px;
+  }
+}
+
+.inner-intro__wrapper {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 177px;
-  padding: 30px;
 
-  background-color: $color-white-smoke;
+  @media (min-width: $vp-768) {
+    min-height: 226px;
+  }
+
+  @media (min-width: $vp-1150) {
+    min-height: 255px;
+  }
 }
 
 .inner-intro__title {
@@ -14,4 +31,29 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+
+  @media (min-width: $vp-768) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.inner-intro__delivery {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    top: 21px;
+    right: 0;
+
+    display: block;
+
+    font-size: 15px;
+    color: $color-charcoal;
+  }
 }
