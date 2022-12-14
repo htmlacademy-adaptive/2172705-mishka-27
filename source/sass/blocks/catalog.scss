@@ -11,10 +11,12 @@
 }
 
 .catalog__list {
-  @include list-reset;
-
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 
   gap: 30px;
 
@@ -48,6 +50,20 @@
 
 .catalog__item-image {
   display: block;
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+
+  @media (min-width: $vp-768) {
+    width: auto;
+    height: 100%;
+  }
+
+  @media (min-width: $vp-1150) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .catalog__product-name {

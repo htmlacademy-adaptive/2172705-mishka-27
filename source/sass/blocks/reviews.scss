@@ -2,20 +2,43 @@
   padding: 30px 30px 45px;
 
   @media (min-width: $vp-768) {
-    display: grid;
     padding: 82px 50px 132px;
-
-    background-image: url("../img/reviews-background.jpg");
-    background-repeat: no-repeat;
-
-    grid-template-areas: "title . write-button"
-                         "text text text"
-                         "author . slider-buttons";
-    grid-template-columns: max-content 1fr 175px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 78px 50px 163px 175px;
+    padding: 78px 50px 163px 224px;
+  }
+}
+
+.reviews__wrapper {
+  @media (min-width: $vp-768) {
+    position: relative;
+
+    display: grid;
+
+    grid-template-areas: "title . write-button"
+    "text text text"
+    "author . slider-buttons";
+    grid-template-columns: max-content 1fr 0.35fr;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -83px;
+      left: -50px;
+      z-index: -1;
+
+      width: 350px;
+      height: 457px;
+
+      background-image: url("../img/reviews-background.jpg");
+    }
+
+    @media (min-width: $vp-1150) {
+      &::before {
+        left: -174px;
+      }
+    }
   }
 }
 
@@ -104,7 +127,8 @@
 
 .reviews__slider-buttons {
   display: flex;
-  margin-bottom: 38px;
+  max-width: 400px;
+  margin: 0 auto 38px;
 
   @media (min-width: $vp-768) {
     margin: 0;
@@ -125,9 +149,13 @@
 
 .reviews__write-button {
   display: block;
+  max-width: 400px;
+  margin: 0 auto;
 
   @media (min-width: $vp-768) {
     align-self: center;
+    width: 100%;
+    margin: 0;
 
     grid-area: write-button;
   }

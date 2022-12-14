@@ -1,12 +1,4 @@
 .container {
-  width: 320px;
+  max-width: 1150px;
   margin: 0 auto;
-
-  @media (min-width: $vp-768) {
-    width: 768px;
-  }
-
-  @media (min-width: $vp-1150) {
-    width: 1150px;
-  }
 }

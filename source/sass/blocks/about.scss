@@ -6,7 +6,20 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 68px 225px 90px;
+    padding: 68px 49px 90px 225px;
+  }
+}
+
+.about__container {
+  max-width: 400px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $vp-1150) {
+    max-width: 960px;
   }
 }
 
@@ -31,7 +44,10 @@
 }
 
 .about__list {
-  @include list-reset;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 
   @media (min-width: $vp-768) {
     display: grid;
@@ -53,5 +69,29 @@
 
     font-size: 20px;
     line-height: 22px;
+
+    &--ecology {
+      order: 1;
+    }
+
+    &--style {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--feelings {
+      order: 2;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--packaging {
+      order: 6;
+    }
   }
 }

@@ -1,5 +1,5 @@
 .order-form {
-  padding: 17px 29px 55px;
+  padding: 17px 30px 55px;
 
   @media (min-width: $vp-768) {
     padding: 54px 0 50px;
@@ -31,7 +31,7 @@
   }
 }
 
-.order-form__form-group-wrapper {
+.order-form__customer-info-wrapper {
   @media (min-width: $vp-768) {
     padding: 50px;
 
@@ -67,14 +67,20 @@
   @media (min-width: $vp-768) {
     order: 1;
     margin: 0;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
 .order-form__button {
   display: block;
   width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 
   @media (min-width: $vp-768) {
-    width: 230px;
+    width: 34.43%;
+    margin: 0;
   }
 }
