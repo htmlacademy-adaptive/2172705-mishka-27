@@ -59,10 +59,13 @@
   @media (min-width: $vp-1150) {
     max-width: 828px;
     margin: 0 auto;
+  }
+}
 
-    &--color {
-      max-width: 867px;
-    }
+.form-group__container-color {
+  @media (min-width: $vp-1150) {
+    max-width: 867px;
+    margin: 0 auto;
   }
 }
 
@@ -206,8 +209,6 @@
   border-bottom: 2px solid $color-default-black;
 
   @media (min-width: $vp-768) {
-    flex-grow: 1;
-
     text-indent: 18px;
   }
 }
