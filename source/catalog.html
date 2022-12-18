@@ -11,7 +11,7 @@
     <header class="header header--inner-page">
       <div class="container">
         <!-- Для показа элемента <nav> класса 'header__nav' необходимо добавить класс 'header__nav--open' -->
-        <nav class="header__nav">
+        <nav class="header__nav header__nav--nojs">
           <a class="header__logo" href="index.html">
             <img src="img/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип сайта 'Мишка'.">
           </a>
@@ -195,7 +195,8 @@
         </div>
       </div>
     </footer>
-    <!-- Для показа элемента <div> класса 'modal-container' необходимо добавить класс 'modal-container--open' -->
+    <!-- Для показа элемента <div> класса "modal-container" необходимо добавить класс "modal-container--open" -->
+    <!-- Модификатор "header__nav--nojs" открывает список навигации на мобильных телефонах, если не отработает скрипт "script.js"-->
     <div class="modal-container">
       <div class="modal-window">
         <h2 class="modal-window__title">Добавить в&nbsp;корзину</h2>
@@ -225,5 +226,6 @@
         </form>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,7 +1,10 @@
 .header {
+  min-height: 79px;
   overflow: hidden;
 
   @media (min-width: $vp-768) {
+    min-height: 133px;
+
     background-color: $color-snow;
 
     &--inner-page {
@@ -10,19 +13,29 @@
   }
 }
 
-.header__logo {
-  z-index: 2;
-
+.header__logo-wrapper {
   display: flex;
   justify-content: center;
   padding: 22px 0;
 
   box-shadow: 0 1px 0 $color-whisper, inset 0 -1px 0 $color-whisper;
 
+  @media (min-width: $vp-768) {
+    padding: 0;
+
+    box-shadow: none;
+  }
+}
+
+.header__logo {
+  z-index: 2;
+
+  & img {
+    display: block;
+  }
 
   @media (min-width: $vp-768) {
     position: absolute;
-    top: 22px;
     left: 50px;
 
     padding: 0;
@@ -42,6 +55,7 @@
   position: absolute;
   top: 32px;
   right: 31px;
+  z-index: 3;
 
   width: 20px;
   height: 14px;
@@ -63,8 +77,8 @@
     display: none;
   }
 
-  &--open .header__logo {
-    box-shadow: 0 1px 0 $color-whisper;
+  &--open .header__nav-wrapper {
+    display: block;
   }
 
   &--open .header__nav-toggle {
@@ -75,10 +89,6 @@
     height: 20px;
 
     background-image: url("../img/nav-toggle-close.svg");
-  }
-
-  &--open .header__nav-wrapper {
-    display: block;
   }
 
   @media (min-width: $vp-768) {
@@ -99,7 +109,6 @@
   @media (min-width: $vp-768) {
     position: static;
 
-    display: grid;
     padding: 0;
 
     background-color: transparent;
@@ -116,8 +125,8 @@
 }
 
 .header__site-nav {
-  z-index: 1;
   position: relative;
+  z-index: 1;
 
   margin: 0;
   padding: 0;
@@ -129,13 +138,13 @@
   @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
-    padding: 21px 0 0 50px;
+    padding: 0 25px 0 50px;
 
     column-gap: 38px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 32px 100px 32px 50px;
+    padding-right: 100px;
 
     column-gap: 74px;
 
@@ -156,7 +165,7 @@
   box-shadow: 0 1px 0 $color-whisper, inset 0 1px 0 $color-whisper;
 
   @media (min-width: $vp-768) {
-    padding: 0;
+    padding: 21px 0 0 0;
 
     font-size: 15px;
 
@@ -164,8 +173,22 @@
   }
 
   @media (min-width: $vp-1150) {
+    padding: 32px 0;
+
     font-size: 17px;
 
+    box-shadow: none;
+  }
+}
+
+.header__site-nav-link:first-child {
+  box-shadow: 0 1px 0 $color-whisper;
+
+  @media (min-width: $vp-768) {
+    box-shadow: none;
+  }
+
+  @media (min-width: $vp-768) {
     box-shadow: none;
   }
 }
@@ -185,7 +208,7 @@
     flex-wrap: wrap;
     max-width: 51.98%;
     margin-left: auto;
-    padding: 32px 50px 32px 0;
+    padding-right: 50px;
 
     row-gap: 10px;
 
@@ -200,12 +223,13 @@
       height: 100%;
 
       background-color: $color-default-white;
+      box-shadow: 0 1px 0 $color-whisper;
     }
   }
 
   @media (min-width: $vp-1150) {
     max-width: 100%;
-    padding: 32px 50px 32px 100px;
+    padding: 0 50px 0 100px;
   }
 }
 
@@ -223,7 +247,8 @@
   box-shadow: 0 1px 0 $color-whisper, inset 0 1px 0 $color-whisper;
 
   @media (min-width: $vp-768) {
-    padding: 0 0 0 84px;
+    min-height: 88px;
+    padding: 32px 0 32px 84px;
 
     box-shadow: none;
   }
@@ -235,7 +260,7 @@
   left: 32px;
 
   @media (min-width: $vp-768) {
-    top: 3px;
+    top: 35px;
     left: 50%;
 
     transform: translateX(-50%);
@@ -248,7 +273,7 @@
   left: 30px;
 
   @media (min-width: $vp-768) {
-    top: 3px;
+    top: 35px;
     left: 31px;
   }
 }
@@ -271,18 +296,22 @@
   @media (min-width: $vp-1150) {
     display: flex;
     flex-wrap: wrap;
-    padding: 21px 100px 0 50px;
+    padding: 0 50px;
 
     column-gap: 65px;
   }
 }
 
 .header__new-sale-nav-link {
+  display: block;
+
   font-weight: 700;
   color: inherit;
   text-decoration: none;
 
   @media (min-width: $vp-768) {
+    padding: 21px 0 0 0;
+
     font-size: 15px;
   }
 }
@@ -294,7 +323,7 @@
 
   @media (min-width: $vp-768) {
     display: block;
-    padding: 21px 50px 0 0;
+    padding: 21px 50px 0 25px;
 
     font-size: 15px;
     color: $color-charcoal;
@@ -302,6 +331,6 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding-left: 100px;
+    padding-left: 50px;
   }
 }
