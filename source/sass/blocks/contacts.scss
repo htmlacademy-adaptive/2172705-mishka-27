@@ -116,12 +116,13 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 100%;
-
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
   border: none;
+
+  & img {
+    position: absolute;
+  }
 
   @media (min-width: $vp-768) {
     height: 457px;
