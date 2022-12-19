@@ -13,6 +13,71 @@
   }
 }
 
+.header__nav-wrapper {
+  position: absolute;
+  z-index: 1;
+
+  width: 100%;
+
+  background-color: $color-default-white;
+
+  @media (min-width: $vp-768) {
+    position: static;
+
+    padding: 0;
+
+    background-color: transparent;
+
+    grid-template-areas: "user-nav user-nav"
+    "site-nav delivery";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $vp-1150) {
+    grid-template-areas: "site-nav user-nav"
+    "new-sale-nav delivery";
+  }
+}
+
+.header__nav {
+  width: 100%;
+
+  & .header__nav-wrapper {
+    display: none;
+  }
+
+  &--open .header__nav-wrapper {
+    display: block;
+  }
+
+  &--open .header__nav-toggle {
+    top: 29px;
+    right: 30px;
+
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../img/nav-toggle-close.svg");
+  }
+
+  @media (max-width: $vp-768) {
+    &--nojs .header__nav-wrapper {
+      position: static;
+      display: block;
+    }
+
+    &--nojs .header__nav-toggle {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    & .header__nav-wrapper {
+      display: grid;
+    }
+  }
+}
+
 .header__logo-wrapper {
   display: flex;
   justify-content: center;
@@ -36,6 +101,7 @@
 
   @media (min-width: $vp-768) {
     position: absolute;
+    top: 22px;
     left: 50px;
 
     padding: 0;
@@ -67,60 +133,6 @@
 
   @media (min-width: $vp-768) {
     display: none;
-  }
-}
-
-.header__nav {
-  width: 100%;
-
-  & .header__nav-wrapper {
-    display: none;
-  }
-
-  &--open .header__nav-wrapper {
-    display: block;
-  }
-
-  &--open .header__nav-toggle {
-    top: 29px;
-    right: 30px;
-
-    width: 21px;
-    height: 20px;
-
-    background-image: url("../img/nav-toggle-close.svg");
-  }
-
-  @media (min-width: $vp-768) {
-    & .header__nav-wrapper {
-      display: grid;
-    }
-  }
-}
-
-.header__nav-wrapper {
-  position: absolute;
-  z-index: 1;
-
-  width: 100%;
-
-  background-color: $color-default-white;
-
-  @media (min-width: $vp-768) {
-    position: static;
-
-    padding: 0;
-
-    background-color: transparent;
-
-    grid-template-areas: "user-nav user-nav"
-    "site-nav delivery";
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: $vp-1150) {
-    grid-template-areas: "site-nav user-nav"
-    "new-sale-nav delivery";
   }
 }
 

@@ -94,6 +94,7 @@
 }
 
 .index-intro__item {
+  position: relative;
   width: 100%;
 }
 
@@ -106,6 +107,28 @@
   font-size: 19px;
   color: $color-default-white;
   text-decoration: none;
+
+  &--interior::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 62px;
+    top: 23px;
+    right: 36px;
+
+    background-image: url("../img/index-intro-interior.svg");
+  }
+
+  &--toy::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 21px;
+    right: 27px;
+
+    background-image: url("../img/index-intro-toy.svg");
+  }
 
   @media (min-width: $vp-768) {
     padding: 25px 167px 34px 36px;

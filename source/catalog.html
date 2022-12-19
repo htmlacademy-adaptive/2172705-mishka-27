@@ -12,16 +12,18 @@
       <div class="container">
         <!-- Для показа элемента <nav> класса 'header__nav' необходимо добавить класс 'header__nav--open' -->
         <nav class="header__nav header__nav--nojs">
-          <a class="header__logo" href="index.html">
-            <img src="img/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип сайта 'Мишка'.">
-          </a>
+          <div class="header__logo-wrapper">
+            <a class="header__logo" href="index.html">
+              <img src="img/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип сайта 'Мишка'.">
+            </a>
+          </div>
           <button class="header__nav-toggle" type="button">
             <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
           </button>
           <div class="header__nav-wrapper">
             <ul class="header__site-nav">
               <li class="header__site-nav-item">
-                <a class="header__site-nav-link" href="#">Каталог товаров</a>
+                <a class="header__site-nav-link" title="Текущая страница">Каталог товаров</a>
               </li>
               <li class="header__site-nav-item">
                 <a class="header__site-nav-link" href="form.html">Вязание на заказ</a>
