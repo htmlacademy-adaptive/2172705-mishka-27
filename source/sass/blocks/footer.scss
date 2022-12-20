@@ -10,6 +10,19 @@
 }
 
 .footer__wrapper {
+  position: relative;
+  @media (max-width: $vp-768) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      right: 30px;
+      height: 1px;
+      background-color: $color-whisper-mod;
+    }
+  }
+
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;

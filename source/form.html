@@ -78,7 +78,7 @@
           <div class="order-form__group form-group">
             <div class="form-group__container">
               <div class="form-group__wrapper">
-                <h3 class="form-group__title">Тип</h3>
+                <h3 class="form-group__title form-group__title--type">Тип</h3>
                 <ul class="form-group__list form-group__list--type">
                   <li class="form-group__type-item">
                     <label class="form-group__control">
@@ -101,7 +101,7 @@
           <div class="order-form__group form-group form-group--color form-group--dark">
             <div class="form-group__container-color">
               <div class="form-group__wrapper">
-                <h3 class="form-group__title">Цвет</h3>
+                <h3 class="form-group__title form-group__title--color">Цвет</h3>
                 <ul class="form-group__list form-group__list--color">
                   <li class="form-group__color-item">
                     <label class="form-group__control">
@@ -151,7 +151,7 @@
           <div class="order-form__group form-group">
             <div class="form-group__container">
               <div class="form-group__wrapper">
-                <h3 class="form-group__title">ФИО</h3>
+                <h3 class="form-group__title form-group__title--full-name">ФИО</h3>
                 <ul class="form-group__list form-group__list--full-name">
                   <li class="form-group__full-name-item">
                     <label class="form-group__control  form-group__control--full-name">
@@ -177,10 +177,10 @@
           </div>
           <div class="order-form__customer-info-wrapper form-group--dark">
             <div class="form-group__container">
-              <div class="order-form__group form-group form-group--telephone">
-                <div class="form-group__wrapper form-group__wrapper--telephone">
-                  <h3 class="form-group__title">Тел</h3>
-                  <label class="form-group__control">
+              <div class="order-form__group form-group form-group--phone">
+                <div class="form-group__wrapper form-group__wrapper--phone">
+                  <h3 class="form-group__title form-group__title--phone">Тел</h3>
+                  <label class="form-group__control form-group__control--phone">
                     <input class="form-group__text-input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                     <span class="visually-hidden">Ваш телефон.</span>
                   </label>
@@ -188,8 +188,8 @@
               </div>
               <div class="order-form__group form-group form-group--email">
                 <div class="form-group__wrapper form-group__wrapper--email">
-                  <h3 class="form-group__title">E-mail</h3>
-                  <label class="form-group__control">
+                  <h3 class="form-group__title form-group__title--email">E-mail</h3>
+                  <label class="form-group__control form-group__control--email">
                     <input class="form-group__text-input" type="email" name="e-mail" placeholder="Ваш Email*" required>
                     <span class="visually-hidden">Ваш e-mail.</span>
                   </label>
@@ -220,7 +220,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <a class="footer__logo logo" href="index.html">
+          <a class="footer__logo" href="index.html">
             <img src="img/logo-mishka-footer.svg" width="102" height="34" alt="Логотип сайта 'Мишка'.">
           </a>
           <ul class="footer__socials-list">

@@ -58,11 +58,55 @@
 }
 
 .about__item {
-  padding-top: 54px;
+  position: relative;
+  padding-top: 83px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 5px;
+  }
+
+  &--ecology::before {
+    width: 33px;
+    height: 38px;
+    background-image: url("../img/about-ecology-icon.svg");
+  }
+
+  &--style::before {
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/about-style-icon.svg");
+  }
+
+  &--likes::before {
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/about-likes-icon.svg");
+  }
+
+  &--feelings::before {
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/about-feelings-icon.svg");
+  }
+
+  &--support::before {
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/about-support-icon.svg");
+  }
+
+  &--packaging::before {
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/about-packaging-icon.svg");
+  }
 
   @media (min-width: $vp-768) {
     padding-top: 56px;
