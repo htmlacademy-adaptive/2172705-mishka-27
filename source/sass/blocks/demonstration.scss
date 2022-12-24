@@ -1,14 +1,6 @@
 .demonstration {
   margin: 0 30px 58px;
 
-  &:hover {
-    box-shadow: 0 6px 10px rgba($color-default-black, 0.1);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px rgba($color-default-black, 0.1);
-  }
-
   @media (min-width: $vp-768) {
     margin: 0 50px 64px;
   }
@@ -24,6 +16,14 @@
 
   outline: 1px solid $color-whisper;
   outline-offset: -1px;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($color-default-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($color-default-black, 0.1);
+  }
 
   @media (min-width: $vp-1150) {
     display: grid;

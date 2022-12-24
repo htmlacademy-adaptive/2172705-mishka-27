@@ -103,16 +103,16 @@
 .index-intro__item:nth-child(odd) {
   background-color: $color-downy;
 
-  &:hover {
+  & .index-intro__link:hover {
     background-color: $color-downy-alter;
-    margin-top: -5px;
+    transform: translateY(-5px);
   }
 
-  &:hover svg {
+  & .index-intro__link:hover::after{
     opacity: 0.7;
   }
 
-  &:active svg {
+  & .index-intro__link:active::after{
     opacity: 0.3;
   }
 }
@@ -120,22 +120,17 @@
 .index-intro__item:nth-child(even) {
   background-color: $color-puerto-rico;
 
-  &:hover {
+  & .index-intro__link:hover {
     background-color: $color-puerto-rico-mod;
+    transform: translateY(-5px);
   }
 
-  &:hover svg {
+  & .index-intro__link:hover::after{
     opacity: 0.7;
   }
 
-  &:active svg {
+  & .index-intro__link:active::after{
     opacity: 0.3;
-  }
-
-  @media (min-width: $vp-768) {
-    &:hover {
-      margin-top: -5px;
-    }
   }
 }
 
@@ -158,20 +153,28 @@
   color: $color-default-white;
   text-decoration: none;
 
-  &--interior svg {
+  &--interior::after {
+    content: "";
     position: absolute;
     width: 40px;
     height: 62px;
     top: 23px;
     right: 36px;
+    opacity: 0.5;
+
+    background-image: url("../img/index-intro-interior.svg");
   }
 
-  &--toy svg{
+  &--toy::after {
+    content: "";
     position: absolute;
     width: 60px;
     height: 60px;
     top: 21px;
     right: 27px;
+    opacity: 0.5;
+
+    background-image: url("../img/index-intro-toy.svg");
   }
 
   @media (min-width: $vp-768) {
