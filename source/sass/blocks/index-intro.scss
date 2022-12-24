@@ -1,4 +1,5 @@
 .index-intro {
+  position: relative;
   background-color: $color-snow;
   background-image: url("../img/intro-mobile@2x1.jpg");
   background-repeat: no-repeat;
@@ -6,10 +7,23 @@
 
   @media (min-width: $vp-768) {
     min-height: 746px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/intro-divider-tablet.svg");
+      z-index: 1;
+    }
   }
 
   @media (min-width: $vp-1150) {
-    padding: 0 50px;
+
+    &::after {
+      height: 24px;
+      background-image: url("../img/intro-divider-desktop.svg");
+    }
   }
 }
 
@@ -39,14 +53,14 @@
   text-align: center;
 
   @media (min-width: $vp-768) {
-    padding: 155px 100px;
+    padding: 134px 50px 155px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 158px 225px;
+    padding: 137px 50px 158px;
 
     font-size: 53px;
     line-height: 57px;
@@ -80,6 +94,7 @@
 
   @media (min-width: $vp-768) {
     display: flex;
+    flex-wrap: wrap;
     margin-right: 50px;
     margin-left: 50px;
   }
@@ -87,15 +102,50 @@
 
 .index-intro__item:nth-child(odd) {
   background-color: $color-downy;
+
+  &:hover {
+    background-color: $color-downy-alter;
+    margin-top: -5px;
+  }
+
+  &:hover svg {
+    opacity: 0.7;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .index-intro__item:nth-child(even) {
   background-color: $color-puerto-rico;
+
+  &:hover {
+    background-color: $color-puerto-rico-mod;
+  }
+
+  &:hover svg {
+    opacity: 0.7;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $vp-768) {
+    &:hover {
+      margin-top: -5px;
+    }
+  }
 }
 
 .index-intro__item {
   position: relative;
   width: 100%;
+
+  @media (min-width: $vp-768) {
+    width: 50%;
+  }
 }
 
 .index-intro__link {
@@ -108,26 +158,20 @@
   color: $color-default-white;
   text-decoration: none;
 
-  &--interior::after {
-    content: "";
+  &--interior svg {
     position: absolute;
     width: 40px;
     height: 62px;
     top: 23px;
     right: 36px;
-
-    background-image: url("../img/index-intro-interior.svg");
   }
 
-  &--toy::after {
-    content: "";
+  &--toy svg{
     position: absolute;
     width: 60px;
     height: 60px;
     top: 21px;
     right: 27px;
-
-    background-image: url("../img/index-intro-toy.svg");
   }
 
   @media (min-width: $vp-768) {

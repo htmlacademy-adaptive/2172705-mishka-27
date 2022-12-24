@@ -82,15 +82,15 @@
                 <ul class="form-group__list form-group__list--type">
                   <li class="form-group__type-item">
                     <label class="form-group__control">
-                      <input class="form-group__control-input" type="radio" name="type-of-product" value="interior" checked>
-                      <span class="form-group__control-mark"></span>
+                      <input class="visually-hidden form-group__control-input" type="radio" name="type-of-product" value="interior" checked>
+                      <span class="form-group__control-mark form-group__control-mark--radio"></span>
                       <span class="form-group__text">Аксессуар для интерьера</span>
                     </label>
                   </li>
                   <li class="form-group__type-item">
                     <label class="form-group__control">
-                      <input class="form-group__control-input" type="radio" name="type-of-product" value="toy">
-                      <span class="form-group__control-mark"></span>
+                      <input class="visually-hidden form-group__control-input" type="radio" name="type-of-product" value="toy">
+                      <span class="form-group__control-mark form-group__control-mark--radio"></span>
                       <span class="form-group__text">Детская игрушка</span>
                     </label>
                   </li>
@@ -105,42 +105,43 @@
                 <ul class="form-group__list form-group__list--color">
                   <li class="form-group__color-item">
                     <label class="form-group__control">
-                      <input class="form-group__control-input" type="checkbox" name="color" value="white" checked>
-                      <span class="form-group__control-mark"></span>
+                      <input class="visually-hidden form-group__control-input" type="checkbox" name="color" value="white" checked>
+                      <span class="form-group__control-mark form-group__control-mark--checkbox"></span>
                       <span class="form-group__text">Белый</span>
                     </label>
                   </li>
                   <li class="form-group__color-item">
                     <label class="form-group__control">
-                      <input class="form-group__control-input" type="checkbox" name="color" value="grey" checked>
-                      <span class="form-group__control-mark"></span>
+                      <input class="visually-hidden form-group__control-input" type="checkbox" name="color" value="grey" checked>
+                      <span class="form-group__control-mark form-group__control-mark--checkbox"></span>
                       <span class="form-group__text">Серый</span>
                     </label>
                   </li>
                   <li class="form-group__color-item">
                     <label class="form-group__control">
-                      <input class="form-group__control-input" type="checkbox" name="color" value="tiffany">
-                      <span class="form-group__control-mark"></span>
+                      <input class="visually-hidden form-group__control-input" type="checkbox" name="color" value="tiffany">
+                      <span class="form-group__control-mark form-group__control-mark--checkbox"></span>
                       <span class="form-group__text">Тиффани</span>
                     </label>
                   </li>
                   <li class="form-group__color-item">
                     <label class="form-group__control">
-                      <input class="form-group__control-input" type="checkbox" name="color" value="black">
-                      <span class="form-group__control-mark"></span>
+                      <input class="visually-hidden form-group__control-input" type="checkbox" name="color" value="black">
+                      <span class="form-group__control-mark form-group__control-mark--checkbox"></span>
                       <span class="form-group__text">Черный</span>
                     </label>
                   </li>
                   <li class="form-group__color-item">
                     <label class="form-group__control">
-                      <input class="form-group__control-input" type="checkbox" name="color" value="pink">
-                      <span class="form-group__control-mark"></span>
+                      <input class="visually-hidden form-group__control-input" type="checkbox" name="color" value="pink">
+                      <span class="form-group__control-mark form-group__control-mark--checkbox"></span>
                       <span class="form-group__text">Розовый</span>
                     </label>
                   </li>
                   <li class="form-group__color-item">
                     <label class="form-group__control">
-                      <input class="form-group__control-input" type="checkbox" name="color" value="orange">
+                      <input class="visually-hidden form-group__control-input" type="checkbox" name="color" value="orange">
+                      <span class="form-group__control-mark form-group__control-mark--checkbox"></span>
                       <span class="form-group__text">Оранжевый</span>
                     </label>
                   </li>
@@ -183,6 +184,12 @@
                   <label class="form-group__control form-group__control--phone">
                     <input class="form-group__text-input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                     <span class="visually-hidden">Ваш телефон.</span>
+                    <svg aria-hidden="true" focusable="false" width="25" height="24" fill="$color-default-black" opacity="0.2" xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <path d="M17.44 24h-1.1a17.63 17.63 0 0 1-11.2-5.73A18.8 18.8 0 0 1 0 6.72V5.33c.1-.89.5-1.48 1.1-2.07.61-.7 1.62-1.48 2.53-1.58.7 0 1.81.5 2.22 1.09.4.49.6 1.58.8 2.37.2.88.6 1.97.5 2.76-.2 1.19-1.8 1.68-2.21 2.57a16.4 16.4 0 0 0 7.56 8.2c.8-.5 1.61-1.88 2.82-1.88.4 0 1.01.2 1.41.3.5.1.91.3 1.31.49.71.3 2.02.6 2.42 1.19.4.59.7 1.58.6 2.17-.3 1.28-2.41 2.66-3.62 3.06zM12.6 1.48A10.8 10.8 0 0 1 23.5 12.15H25C25 5.43 19.46 0 12.6 0v1.48z"/>
+                        <path d="M12.6 9.19v1.58c.8 0 1.41.59 1.41 1.38h1.62a3 3 0 0 0-3.03-2.96zM12.6 6.12a6.11 6.11 0 0 1 6.15 6.03h1.61c0-4.15-3.42-7.5-7.66-7.5v1.47h-.1z"/>
+                      </g>
+                    </svg>
                   </label>
                 </div>
               </div>
@@ -192,6 +199,9 @@
                   <label class="form-group__control form-group__control--email">
                     <input class="form-group__text-input" type="email" name="e-mail" placeholder="Ваш Email*" required>
                     <span class="visually-hidden">Ваш e-mail.</span>
+                    <svg aria-hidden="true" focusable="false" width="32" height="21" fill="$color-default-black" opacity="0.2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28 0H4C1.8 0 0 1.8 0 4v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zM2 5.3l7 5.3-7 5.3V5.3zM30 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2l7.8-5.9 4.4 3.3a3 3 0 0 0 3.6 0l4.4-3.3L30 17zm0-1.2l-7-5.3 7-5.3v10.6zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24a2 2 0 0 1 2 2l-12.8 9.6z"/>
+                    </svg>
                   </label>
                 </div>
               </div>
@@ -221,7 +231,10 @@
       <div class="container">
         <div class="footer__wrapper">
           <a class="footer__logo" href="index.html">
-            <img src="img/logo-mishka-footer.svg" width="102" height="34" alt="Логотип сайта 'Мишка'.">
+            <svg width="102" height="34" fill="$color-default-black" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.22 21.38c-.1-2.68-.5-5.27-.5-7.95 0-2.2.4-4.38-.4-6.47 0-.2.1-.5.1-.7.2-.99-3.3-.5-3.8.5-.3.3-.5.6-.4 1 0 .1.1.2.1.3-.7 3.18-1.6 6.26-2.6 9.34-.4 1.2-.9 2.3-1.3 3.48-.6-1.09-1.2-2.18-1.6-3.38-1.4-3.38-2.6-6.86-4.3-10.14.2-1.5-3.2-1.4-3.9 0-.8 1.69-.7 3.38-.4 5.17.3 1.99.4 3.98.4 6.07 0 3.97.4 7.85.4 11.83-.4.4-.5.9-.1 1.4.2.2.4.4.6.5 1 .69 3.6.09 3.6-1.3 0-4.08-.3-8.16-.4-12.33v-1.2c.1.1.1.3.2.4.6 1.6 1.3 3.18 2.2 4.67.9 1.5 1.3 3.09 1.8 4.68-.2.2-.3.5-.2.7 0 .2.1.3.3.4.6.49 1.8.3 2.5 0 .3-.1.6-.3.8-.4.3-.2.9-.7.7-1.2 0-.1-.1-.2-.1-.3.5-1.29.7-2.58 1-3.88.3-1.39.8-2.78 1.3-4.07.1.6.1 1.2.2 1.89.2 2.58 0 5.07 0 7.55 0 .8.1 1.6.2 2.5.1.29.4 1.78.3 1.88-.8.5-.6 1.1.2 1.3.9.2 2.1-.1 2.8-.7 1.2-1.1.6-2.79.4-4.18-.5-2.39 0-4.97-.1-7.36zM27.62 22.08c-.1-2-.8-3.88-.8-5.87 0-2.29.2-4.57-.2-6.86-.1-.7-4.1.1-3.9 1 .3 2.08.2 4.17.2 6.36 0 1.99.5 3.88.7 5.86.3 2.1-.1 4.18.1 6.17.1 1 .8 2.69.1 3.58-.4.5 1.5.3 1.6.3.8-.1 1.8-.4 2.3-1 .7-.8.2-2.38.1-3.38-.3-1.99-.1-4.17-.2-6.16zM43.92 18.8c-2.1-2.79-5.9-.8-8.6-1.5-1.4-.4-1.4-2.28-1.4-3.38 0-1.39-.1-2.68-.3-4.07-.1-1.1 0-2.1.7-2.89.1-.1.9-.3.8-.3.4-.1.7-.1 1.1-.1 1.5-.1 4.6.2 4 2.49-.3 1 3.6.4 3.9-.6 1.2-4.57-7.3-3.68-9.7-3.08-2.2.6-4.6 1.79-4.8 4.38-.1 1.19.3 2.38.3 3.58.1 1.39-.2 2.78.3 4.07 1.1 2.99 5.5 1.6 7.8 1.7 3.8.3 2.7 5.46 2.7 7.85 0 1.3 1.2 3.38.2 4.48-.6.7-2 .7-2.8.8-.8.1-2.2.29-2.7-.5-1-1.4.1-3.79-.1-5.38-.1-.9-4.1-.1-3.9 1 .3 2.58-1.4 6.06 2.4 6.56 2.4.3 5.2-.2 7.5-.9 1.2-.4 2.3-.89 3.2-1.78 1-.9.7-2.3.4-3.48-.5-3.09.9-6.47-1-8.95zM61.32 18.6c-.1-3.78-.7-7.46-.7-11.24 0-1.99-4-1.3-4 .3 0 3.58.5 7.16.7 10.74v.2c-1.9 0-3.9.2-5.9.2.2-4.58-.6-9.15-.4-13.83 0-.6-3.9-.1-3.9 1-.2 4.47.6 8.85.5 13.32l-.3 6.37c0 1.1.2 2.19.3 3.28.1 1 .5 2.29.2 3.28-.2.8 3.6.3 3.9-.7.5-1.79-.2-3.97-.4-5.76-.2-1.7 0-3.48.1-5.17 2-.1 4.1-.3 6.1 0l.3 4.07c.1 1.2.2 2.29.2 3.48 0 1 .1 2.49-.2 3.48-.8 2.1 3.1 1.9 3.7.4.7-1.89.5-4.17.4-6.16-.2-2.49-.6-4.88-.6-7.26zM78.22 22.97c-.9-2.78-2.4-5.17-3.6-7.75 1-1.9 2-3.88 2.9-5.87.8-1.8 1.4-3.78 3.1-5.07.6-.4.6-.9-.3-1-.9-.1-2.1.2-2.8.7-1.4 1.3-2.4 2.68-3.1 4.37-.9 2.1-1.9 4.08-2.9 6.07-.1.1-.1.3-.2.4-.5.3-.8.8-.6 1.3a66.9 66.9 0 0 1-2.5 4.57c-.3-5.47-1-11.04-1.2-16.51 0-1.3-4-.5-3.9 1 .2 6.85 1.2 13.62 1.3 20.48v.1c-.3.3-.2.5.1.6 0 1.78-.1 3.47-.2 5.26-.5.7.5 1.1 1.1 1.1h.1c.7 0 2.6-.3 2.7-1.4.2-2.08.3-4.17.2-6.26 1.6-1.69 2.9-3.58 4.1-5.57.8 1.5 1.5 2.99 2 4.58.9 2.68 2.3 5.27 3.1 7.95.5 1.8 4.5.7 3.9-1-1-2.78-2.4-5.26-3.3-8.05zM101.72 18.4c-.2-.8-1.4-.8-2.3-.8v-1c-.1-2.68-.2-5.36-.4-7.95-.2-2.48-1.6-3.28-4-3.18-2.4.1-5.2.5-7.5 1.4-2.6.99-4.1 2.88-4.6 5.66-.5 2.98.2 6.17.4 9.15.2 3.48.1 6.96.1 10.44 0 .6 3.9 0 3.9-1v-8.25c0-.8-.1-1.59-.1-2.38 1.4-.6 3.7 0 5.1.1 1.1.1 2.2-.2 3.2-.3 0 2.29.1 4.57.2 6.86 0 1.2.5 3.48-.4 4.47-.4.5 1.5.3 1.6.3.8-.1 1.8-.4 2.3-1 .9-1.09.5-3.77.4-5.06-.1-1.9-.1-3.78-.1-5.67 1.1-.2 2.4-.9 2.2-1.8zm-14.6-.1l-.3-3.68c-.2-2.29.1-5.57 2.3-6.96.6-.4 1.7-.3 2.4-.4 1-.2 2-.4 2.8.2 1.2.8.9 3.68.9 4.87 0 2 .2 3.98.3 5.97-.6.1-1.1.1-1.7.1-2.3-.2-4.6-.6-6.7-.1zM24.22 6.66c.5-.1 1-.2 1.5-.5l.2-.2c.5-.3 1-.79.7-1.39-.5-1.09-.4-2.18-.4-3.38 0-1-1-1.19-1.8-1.19-.7.1-2.2.6-2.2 1.5 0 .99-.1 1.98.1 2.98 0 .1-.1.2-.1.4-.1.2 0 .4.1.59v.4c.1.2.2.4.4.5.6.3 1.1.3 1.5.3z"/>
+            </svg>
+            <span class="visually-hidden">Логотип сайта 'Мишка'.</span>
           </a>
           <ul class="footer__socials-list">
             <li class="footer__socials-item">

@@ -1,3 +1,7 @@
+let imageMap = document.querySelector(".contacts__map");
+
+imageMap.classList.remove("contacts__map--nojs");
+
 ymaps.ready(function () {
   let myMap = new ymaps.Map('map', {
           center: [59.938635, 30.323118],

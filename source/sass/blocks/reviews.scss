@@ -1,11 +1,14 @@
 .reviews {
   padding: 30px 30px 45px;
-  background-image: url("../img/zigzag-line-mobile.svg");
+
+  background-image: url("../img/zigzag-line-small.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 
   @media (min-width: $vp-768) {
     padding: 82px 50px 132px;
+
+    background-image: url("../img/zigzag-line-big.svg");
   }
 
   @media (min-width: $vp-1150) {
@@ -22,7 +25,7 @@
     grid-template-areas: "title . write-button"
     "text text text"
     "author . slider-buttons";
-    grid-template-columns: max-content 1fr 1.04fr;
+    grid-template-columns: max-content 1fr 0.69fr;
 
     &::before {
       content: "";
@@ -38,6 +41,7 @@
     }
 
     @media (min-width: $vp-1150) {
+      grid-template-columns: max-content 1fr 0.38fr;
       &::before {
         left: -174px;
       }
@@ -142,6 +146,7 @@
 
 .reviews__slider-button {
   position: relative;
+
   display: block;
   width: 100%;
   min-height: 52px;
@@ -153,16 +158,30 @@
   &::before {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 26px;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+
+    width: 50px;
+    height: 26px;
+
     background-image: url("../img/reviews-arrow.svg");
+    transform: translateX(-50%) translateY(-50%);
   }
 
   &--next::before {
     transform: translateX(-50%) translateY(-50%) rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $vp-768) {
+    border: none;
   }
 }
 

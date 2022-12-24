@@ -11,22 +11,25 @@
 
 .footer__wrapper {
   position: relative;
-  @media (max-width: $vp-768) {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 30px;
-      right: 30px;
-      height: 1px;
-      background-color: $color-whisper-mod;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background-color: $color-whisper-mod;
   }
+
 
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -37,6 +40,14 @@
     display: block;
 
     line-height: 0;
+
+    &:hover svg {
+      fill: $color-puerto-rico-mod;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -67,6 +78,14 @@
 
 .footer__socials-link {
   line-height: 0;
+
+  &:hover svg {
+    stroke: $color-puerto-rico-mod;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .footer__developer {
@@ -88,6 +107,14 @@
 
 .footer__developer-link {
   line-height: 0;
+
+  &:hover svg {
+    fill: $color-puerto-rico-mod;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .footer__developer-text {

@@ -59,60 +59,94 @@
 
 .about__item {
   position: relative;
+
   padding-top: 83px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
 
-  &::before {
+  &--ecology::before {
     content: "";
     position: absolute;
     top: 28px;
-    left: 5px;
-  }
+    left: 7px;
 
-  &--ecology::before {
     width: 33px;
     height: 38px;
+
     background-image: url("../img/about-ecology-icon.svg");
   }
 
   &--style::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 0;
+
     width: 47px;
     height: 27px;
+
     background-image: url("../img/about-style-icon.svg");
   }
 
   &--likes::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 7px;
+
     width: 34px;
     height: 27px;
+
     background-image: url("../img/about-likes-icon.svg");
   }
 
   &--feelings::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 0;
+
     width: 35px;
     height: 34px;
+
     background-image: url("../img/about-feelings-icon.svg");
   }
 
   &--support::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: -7px;
+
     width: 55px;
     height: 23px;
+
     background-image: url("../img/about-support-icon.svg");
   }
 
   &--packaging::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 0;
+
     width: 33px;
     height: 32px;
+
     background-image: url("../img/about-packaging-icon.svg");
   }
 
   @media (min-width: $vp-768) {
-    padding-top: 56px;
+    padding-top: 55px;
 
     font-size: 20px;
     line-height: 22px;
+
+    &::before {
+      top: 0;
+    }
 
     &--ecology {
       order: 1;
@@ -124,6 +158,7 @@
 
     &--likes {
       order: 5;
+      padding-top: 48px;
     }
 
     &--feelings {
