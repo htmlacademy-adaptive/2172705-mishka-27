@@ -1,12 +1,16 @@
 .product {
   padding: 30px 30px 36px;
+  background-image: url("../img/zigzag-line-small.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
 
   @media (min-width: $vp-768) {
-    padding: 40px 50px 52px;
+    padding: 40px 50px 69px;
+    background-image: url("../img/zigzag-line-big.svg");
   }
 
   @media (min-width: $vp-1150) {
-    padding: 54px 50px 73px 225px;
+    padding: 54px 50px 96px 225px;
   }
 }
 
@@ -35,6 +39,7 @@
   }
 
   @media (min-width: $vp-1150) {
+    grid-template-columns: 33.37% auto;
     column-gap: 58px;
   }
 }
@@ -133,9 +138,19 @@
 }
 
 .product__info-item {
+  position: relative;
   display: grid;
 
   grid-template-columns: 98px auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -16px;
+    background-color: $color-whisper;
+  }
 }
 
 .product__info-property {

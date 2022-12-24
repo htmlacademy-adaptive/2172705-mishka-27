@@ -15,6 +15,15 @@
   flex-direction: column;
 
   outline: 1px solid $color-whisper;
+  outline-offset: -1px;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($color-default-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($color-default-black, 0.1);
+  }
 
   @media (min-width: $vp-1150) {
     display: grid;
@@ -24,17 +33,11 @@
   }
 }
 
-.demonstration__title {
-  margin: 0;
-  padding: 22px 13px 26px 28.44%;
-
-  font-weight: 700;
-  font-size: 17px;
+.demonstration__title-wrapper {
+  padding: 22px 13px 26px 35%;
 
   @media (min-width: $vp-768) {
-    padding: 41px 40px 25px 16.02%;
-
-    font-size: 20px;
+    padding: 41px 40px 25px 107px;
   }
 
   @media (min-width: $vp-1150) {
@@ -42,7 +45,47 @@
   }
 }
 
+.demonstration__title {
+  position: relative;
+
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -57px;
+
+    width: 32px;
+    height: 22px;
+
+    background-image: url("../img/demonstration-icon.svg");
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+
+    &::before {
+      left: -65px;
+    }
+  }
+
+  @media (min-width: $vp-1150) {
+    &::before {
+      top: -49px;
+      left: 0;
+
+      transform: translateY(0);
+    }
+  }
+}
+
 .demonstration__video {
+  position: relative;
   @media (min-width: $vp-768) {
     order: -1;
   }
@@ -55,9 +98,45 @@
 .demonstration__video-preview {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 
   object-fit: cover;
+}
+
+.demonstration__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 100px;
+  height: 77px;
+
+  background-color: $color-transparent;
+  border: none;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../img/demonstration-play-button.svg");
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &:hover {
+    transform: translateX(-50%) translateY(-50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .demonstration__description {

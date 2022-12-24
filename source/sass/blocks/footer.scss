@@ -10,10 +10,28 @@
 }
 
 .footer__wrapper {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    left: 30px;
+
+    height: 1px;
+
+    background-color: $color-whisper-mod;
+  }
+
+
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -24,6 +42,14 @@
     display: block;
 
     line-height: 0;
+
+    &:hover svg {
+      fill: $color-puerto-rico-mod;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -54,31 +80,41 @@
 
 .footer__socials-link {
   line-height: 0;
+
+  &:hover svg {
+    stroke: $color-puerto-rico-mod;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
-.footer__developer {
-  position: relative;
-
+.footer__developer-link {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 80px;
   padding: 23px 21.56%;
 
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: inherit;
+  text-decoration: none;
+
   gap: 27px;
+
+  &:hover svg {
+    fill: $color-puerto-rico-mod;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 
   @media (min-width: $vp-768) {
     min-height: auto;
     padding: 0;
   }
-}
-
-.footer__developer-link {
-  line-height: 0;
-}
-
-.footer__developer-text {
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 18px;
 }
