@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мишка: каталог товаров</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header class="header header--inner-page">
       <div class="container">
         <!-- Для показа элемента <nav> класса 'header__nav' необходимо добавить класс 'header__nav--open' -->
-          <!-- Модификатор "header__nav--nojs" открывает список навигации на мобильных телефонах, если не отработает скрипт "navigation-mobile.js"-->
+        <!-- Модификатор "header__nav--nojs" открывает список навигации на мобильных телефонах, если не отработает скрипт "navigation-mobile.js"-->
         <nav class="header__nav header__nav--nojs">
           <div class="header__logo-wrapper">
             <a class="header__logo" href="index.html">
-              <img src="img/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип сайта 'Мишка'.">
+              <img src="img/svg/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип сайта 'Мишка'.">
             </a>
           </div>
           <button class="header__nav-toggle" type="button">
@@ -75,7 +79,11 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <a class="catalog__link-image" href="#">
-                <img class="catalog__item-image" src="img/product-card-1.jpg" width="260" height="195" alt="">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/jpg/product-card-1-desktop@1x.jpg 1x, img/jpg/product-card-1-desktop@2x.jpg 2x" width="316" height="462">
+                  <source media="(min-width: 768px)" srcset="img/jpg/product-card-1-tablet@1x.jpg 1x, img/jpg/product-card-1-tablet@2x.jpg 2x" width="334" height="334">
+                  <img class="catalog__item-image" src="img/jpg/product-card-1-mobile@1x.jpg" srcset="img/jpg/product-card-1-mobile@2x.jpg 2x" width="260" height="195" alt="">
+                </picture>
                 <span class="visually-hidden">Переход на страницу товара.</span>
               </a>
               <div class="catalog__item-wrapper">
@@ -98,7 +106,11 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__link-image" href="#">
-                <img class="catalog__item-image" src="img/product-card-2.jpg" width="260" height="195" alt="">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/jpg/product-card-2-desktop@1x.jpg 1x, img/jpg/product-card-2-desktop@2x.jpg 2x" width="316" height="462">
+                  <source media="(min-width: 768px)" srcset="img/jpg/product-card-2-tablet@1x.jpg 1x, img/jpg/product-card-2-tablet@2x.jpg 2x" width="334" height="334">
+                  <img class="catalog__item-image" src="img/jpg/product-card-2-mobile@1x.jpg" srcset="img/jpg/product-card-2-mobile@2x.jpg 2x" width="260" height="195" alt="">
+                </picture>
                 <span class="visually-hidden">Переход на страницу товара.</span>
               </a>
               <div class="catalog__item-wrapper">
@@ -121,7 +133,11 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__link-image" href="#">
-                <img class="catalog__item-image" src="img/product-card-3.jpg" width="260" height="195" alt="">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/jpg/product-card-3-desktop@1x.jpg 1x, img/jpg/product-card-3-desktop@2x.jpg 2x" width="316" height="462">
+                  <source media="(min-width: 768px)" srcset="img/jpg/product-card-3-tablet@1x.jpg 1x, img/jpg/product-card-3-tablet@2x.jpg 2x" width="334" height="334">
+                  <img class="catalog__item-image" src="img/jpg/product-card-3-mobile@1x.jpg" srcset="img/jpg/product-card-3-mobile@2x.jpg 2x" width="260" height="195" alt="">
+                </picture>
                 <span class="visually-hidden">Переход на страницу товара.</span>
               </a>
               <div class="catalog__item-wrapper">
@@ -152,7 +168,11 @@
               <h2 class="demonstration__title">Процесс производства</h2>
             </div>
             <div class="demonstration__video">
-              <img class="demonstration__video-preview" src="img/demonstration-video-preview.jpg" width="260" height="150" alt="Вязаные корзинки.">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/jpg/demonstration-desktop@1x.jpg 1x, img/jpg/demonstration-desktop@2x.jpg 2x" width="683" height="455">
+                <source media="(min-width: 768px)" srcset="img/jpg/demonstration-tablet@1x.jpg 1x, img/jpg/demonstration-tablet@2x.jpg 2x" width="668" height="455">
+                <img class="demonstration__video-preview" src="img/jpg/demonstration-mobile@1x.jpg" srcset="img/jpg/demonstration-mobile@2x.jpg 2x" width="260" height="150" alt="Вязаные корзинки.">
+              </picture>
               <a class="demonstration__play-button" href="#">
                 <span class="visually-hidden">Включить видео.</span>
               </a>

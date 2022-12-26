@@ -46,6 +46,7 @@
   }
 
   @media (min-width: $vp-1150) {
+    max-width: 316px;
     flex-direction: column;
   }
 }
@@ -59,6 +60,7 @@
   @media (min-width: $vp-768) {
     display: flex;
     flex-direction: column;
+    min-height: 334px;
   }
 
   @media (min-width: $vp-1150) {
@@ -96,18 +98,15 @@
 .catalog__item-image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-width: 100%;
 
-  object-fit: cover;
+  object-fit: contain;
 
   @media (min-width: $vp-768) {
     width: auto;
-    height: 100%;
-  }
-
-  @media (min-width: $vp-1150) {
-    width: 100%;
     height: auto;
+    max-width: none;
   }
 }
 

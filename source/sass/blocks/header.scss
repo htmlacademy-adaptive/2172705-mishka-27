@@ -57,7 +57,7 @@
     width: 21px;
     height: 20px;
 
-    background-image: url("../img/nav-toggle-close.svg");
+    background-image: url("../img/svg/nav-toggle-close.svg");
   }
 
   @media (max-width: $vp-768) {
@@ -87,6 +87,7 @@
   box-shadow: 0 1px 0 $color-whisper, inset 0 -1px 0 $color-whisper;
 
   @media (min-width: $vp-768) {
+    position: relative;
     padding: 0;
 
     box-shadow: none;
@@ -136,7 +137,7 @@
   height: 14px;
 
   background: transparent;
-  background-image: url("../img/nav-toggle-open.svg");
+  background-image: url("../img/svg/nav-toggle-open.svg");
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
@@ -166,7 +167,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 0 100px 0 50px;
+    padding: 0 100px 0 0;
 
     column-gap: 74px;
   }
@@ -326,6 +327,10 @@
   @media (min-width: $vp-768) {
     padding-right: 50px;
   }
+
+  @media (min-width: $vp-1150) {
+    padding-right: 0;
+  }
 }
 
 .header__user-nav-link--cart-icon svg {
@@ -357,7 +362,7 @@
   @media (min-width: $vp-1150) {
     display: flex;
     flex-wrap: wrap;
-    padding: 21px 50px 0;
+    padding: 21px 50px 0 0;
 
     column-gap: 65px;
   }
@@ -400,6 +405,6 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding-left: 50px;
+    padding: 21px 0 0 50px;
   }
 }
