@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мишка: главная страница</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header class="header">
@@ -15,7 +19,7 @@
         <nav class="header__nav header__nav--nojs">
           <div class="header__logo-wrapper">
             <a class="header__logo" href="#">
-              <img src="img/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип сайта 'Мишка'.">
+              <img src="img/svg/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип сайта 'Мишка'.">
             </a>
           </div>
           <button class="header__nav-toggle" type="button">
@@ -97,7 +101,13 @@
                 <dd class="product__info-value">15 см</dd>
               </div>
             </dl>
-            <img class="product__picture" src="img/product-of-the-week.jpg" width="260" height="315" alt="Вязаные корзинки.">
+            <div class="product__picture-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/jpg/product-of-the-week-desktop@1x.jpg 1x, img/jpg/product-of-the-week-desktop@2x.jpg 2x" width="525" height="636">
+                <source media="(min-width: 768px)" srcset="img/jpg/product-of-the-week-tablet@1x.jpg 1x, img/jpg/product-of-the-week-tablet@2x.jpg 2x" width="334" height="404">
+                <img class="product__picture" src="img/jpg/product-of-the-week-mobile@1x.jpg" srcset="img/jpg/product-of-the-week-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки.">
+              </picture>
+            </div>
             <div class="product__order-wrapper">
               <span class="product__price">Цена: 990 руб.</span>
               <a class="product__button button" href="#">Заказать</a>
@@ -159,7 +169,11 @@
               </dl>
             </div>
             <div class="contacts__map contacts__map--nojs" id="map">
-              <img src="img/map.jpg" width="320" height="454" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101." title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/jpg/map-desktop@1x.jpg 1x, img/jpg/map-desktop@2x.jpg 2x" width="527" height="457">
+                <source media="(min-width: 768px)" srcset="img/jpg/map-tablet@1x.jpg 1x, img/jpg/map-tablet@2x.jpg 2x" width="768" height="457">
+                <img src="img/jpg/map-mobile@1x.jpg" srcset="img/jpg/map-mobile@2x.jpg 2x" width="320" height="454" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101." title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+              </picture>
             </div>
             <div class="contacts__button-wrapper">
               <a class="contacts__button button" href="#">Напишите нам</a>

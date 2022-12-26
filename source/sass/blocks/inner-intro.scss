@@ -2,26 +2,27 @@
   background-color: $color-white-smoke;
 
   @media (min-width: $vp-768) {
-    background-image: url("../img/intro-divider-tablet.svg");
-    background-position: bottom;
+    background-image: url("../img/svg/intro-divider-tablet.svg");
     background-repeat: repeat-x;
+    background-position: bottom;
   }
 
   @media (min-width: $vp-1150) {
-    background-image: url("../img/intro-divider-desktop.svg");
+    background-image: url("../img/svg/intro-divider-desktop.svg");
   }
 }
 
 .inner-intro__wrapper {
   position: relative;
+
+  min-height: 177px;
+  padding: 73px 30px;
+
   text-align: center;
 
-  padding: 73px 30px;
-  min-height: 177px;
-
   @media (min-width: $vp-768) {
-    padding: 57px 50px;
     min-height: 194px;
+    padding: 57px 50px;
   }
 
   @media (min-width: $vp-1150) {

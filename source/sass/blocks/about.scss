@@ -75,7 +75,7 @@
     width: 33px;
     height: 38px;
 
-    background-image: url("../img/about-ecology-icon.svg");
+    background-image: url("../img/svg/about-ecology-icon.svg");
   }
 
   &--style::before {
@@ -87,7 +87,7 @@
     width: 47px;
     height: 27px;
 
-    background-image: url("../img/about-style-icon.svg");
+    background-image: url("../img/svg/about-style-icon.svg");
   }
 
   &--likes::before {
@@ -99,7 +99,7 @@
     width: 34px;
     height: 27px;
 
-    background-image: url("../img/about-likes-icon.svg");
+    background-image: url("../img/svg/about-likes-icon.svg");
   }
 
   &--feelings::before {
@@ -111,7 +111,7 @@
     width: 35px;
     height: 34px;
 
-    background-image: url("../img/about-feelings-icon.svg");
+    background-image: url("../img/svg/about-feelings-icon.svg");
   }
 
   &--support::before {
@@ -123,7 +123,7 @@
     width: 55px;
     height: 23px;
 
-    background-image: url("../img/about-support-icon.svg");
+    background-image: url("../img/svg/about-support-icon.svg");
   }
 
   &--packaging::before {
@@ -135,7 +135,7 @@
     width: 33px;
     height: 32px;
 
-    background-image: url("../img/about-packaging-icon.svg");
+    background-image: url("../img/svg/about-packaging-icon.svg");
   }
 
   @media (min-width: $vp-768) {

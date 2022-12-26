@@ -1,12 +1,14 @@
 .product {
   padding: 30px 30px 36px;
-  background-image: url("../img/zigzag-line-small.svg");
+
+  background-image: url("../img/svg/zigzag-line-small.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 
   @media (min-width: $vp-768) {
     padding: 40px 50px 69px;
-    background-image: url("../img/zigzag-line-big.svg");
+
+    background-image: url("../img/svg/zigzag-line-big.svg");
   }
 
   @media (min-width: $vp-1150) {
@@ -19,11 +21,11 @@
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
-    max-width: 768px;
+    max-width: none;
   }
 
   @media (min-width: $vp-1150) {
-    max-width: 960px;
+    max-width: 875px;
   }
 }
 
@@ -39,8 +41,9 @@
   }
 
   @media (min-width: $vp-1150) {
-    grid-template-columns: 33.37% auto;
     column-gap: 58px;
+
+    grid-template-columns: 33.37% auto;
   }
 }
 
@@ -139,6 +142,7 @@
 
 .product__info-item {
   position: relative;
+
   display: grid;
 
   grid-template-columns: 98px auto;
@@ -146,9 +150,11 @@
   &::after {
     content: "";
     position: absolute;
+    bottom: -16px;
+
     width: 100%;
     height: 1px;
-    bottom: -16px;
+
     background-color: $color-whisper;
   }
 }
@@ -167,26 +173,28 @@
   color: $color-charcoal;
 }
 
+.product__picture-wrapper {
+  @media (min-width: $vp-768) {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+  }
+
+  @media (min-width: $vp-1150) {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+  }
+}
+
 .product__picture {
   display: block;
   width: 100%;
   height: auto;
   margin-bottom: 25px;
 
-  object-fit: cover;
+  object-fit: contain;
 
   @media (min-width: $vp-768) {
     margin: 0;
-
-    grid-column: 2/-1;
-    grid-row: 2/-1;
-  }
-
-  @media (min-width: $vp-1150) {
-    margin: 0;
-
-    grid-column: 2/-1;
-    grid-row: 1/-1;
   }
 }
 

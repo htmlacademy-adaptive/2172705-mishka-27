@@ -15,18 +15,21 @@
   cursor: pointer;
 
   &:hover {
-    background: $color-charcoal;
     color: $color-default-white;
+
+    background: $color-charcoal;
   }
 
   &:focus {
-    background: $color-charcoal;
     color: $color-default-white;
+
+    background: $color-charcoal;
   }
 
   &:active {
-    background: $color-charcoal;
     color: rgba($color-default-white, 0.3);
+
+    background: $color-charcoal;
   }
 
   &--secondary {
@@ -46,8 +49,8 @@
 
     &:focus {
       background-color: $color-downy;
-      opacity: 0.7;
       outline: auto;
+      opacity: 0.7;
     }
 
     &:active {
@@ -57,11 +60,11 @@
   }
 
   &--modal {
-
     &:hover {
+      color: $color-charcoal;
+
       background-color: transparent;
       outline-color: rgba($color-charcoal, 0.3);
-      color: $color-charcoal;
     }
 
     &:active {
