@@ -464,6 +464,10 @@
   display: flex;
   align-items: center;
   min-height: 52px;
+
+  &:hover .form-group__control-mark {
+    border-color: $color-downy-mod;
+  }
 }
 
 .form-group__type-item .form-group__control {
@@ -486,6 +490,10 @@
   display: flex;
   align-items: center;
   min-height: 52px;
+
+  &:hover .form-group__control-mark {
+    border-color: $color-downy-mod;
+  }
 
   @media (min-width: $vp-768) {
     min-width: 210px;
