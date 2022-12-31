@@ -35,15 +35,8 @@
     grid-template-rows: repeat(3, auto);
 
     &::after {
-      content: "";
-      position: absolute;
       top: 62px;
       left: -111px;
-
-      width: 47px;
-      height: 81px;
-
-      background-image: url("../img/svg/contacts-flag.svg");
     }
   }
 }
