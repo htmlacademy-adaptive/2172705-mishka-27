@@ -1,14 +1,27 @@
 .inner-intro {
+  position: relative;
   background-color: $color-white-smoke;
 
   @media (min-width: $vp-768) {
-    background-image: url("../img/svg/intro-divider-tablet.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/svg/intro-divider-tablet.svg");
+    }
   }
 
   @media (min-width: $vp-1150) {
-    background-image: url("../img/svg/intro-divider-desktop.svg");
+    &::after {
+      height: 34px;
+
+      background-image: url("../img/svg/inner-intro-divider-desktop.svg");
+    }
   }
 }
 

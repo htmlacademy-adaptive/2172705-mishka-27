@@ -1,14 +1,34 @@
 .form-group {
-  margin: 0 0 33px;
+  margin: 0;
   padding: 0;
 
   border: none;
 
-  &--optional {
-    margin-bottom: 17px;
+  &--type {
+    margin-bottom: 21px;
   }
 
-  &--dark {
+  &--color {
+    margin-bottom: 22px;
+  }
+
+  &--full-name {
+    margin-bottom: 26px;
+  }
+
+  &--phone {
+    margin-bottom: 30px;
+  }
+
+  &--email {
+    margin-bottom: 30px;
+  }
+
+  &--optional {
+    margin-bottom: 11px;
+  }
+
+  &--dark-theme {
     @media (min-width: $vp-768) {
       background-color: $color-white-smoke;
     }
@@ -34,11 +54,15 @@
     &--email .form-group__title {
       margin: 0;
     }
+
+    &--optional {
+      padding-bottom: 54px;
+    }
   }
 
   @media (min-width: $vp-1150) {
     margin: 0;
-    padding: 48px 225px 52px 97px;
+    padding: 50px 225px 50px 114px;
 
     &--color {
       padding-right: 186px;
@@ -73,18 +97,22 @@
 .form-group__wrapper {
   position: relative;
 
-  @media (max-width: $vp-768) {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    height: 1px;
+
+    background-color: $color-downy-mod;
+  }
+
+  @media (min-width: $vp-768) {
     &::after {
-      content: "";
-      position: absolute;
-      top: 12px;
-      right: 0;
-      left: 0;
-      z-index: -1;
-
-      height: 1px;
-
-      background-color: $color-downy-mod;
+      display: none;
     }
   }
 
@@ -116,15 +144,15 @@
   background-color: $color-default-white;
 
   &--type {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   &--color {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
 
   &--full-name {
-    margin-bottom: 29px;
+    margin-bottom: 26px;
   }
 
   &--phone {
@@ -143,6 +171,10 @@
     margin-top: 16px;
 
     background-color: $color-transparent;
+
+    &--optional {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -168,7 +200,7 @@
     &--color {
       column-gap: 52px;
 
-      row-gap: 24px;
+      row-gap: 23px;
     }
 
     &--full-name {
@@ -177,10 +209,10 @@
   }
 
   @media (min-width: $vp-1150) {
-    width: 84.54%;
+    width: 86.50%;
 
     &--color {
-      width: 86.1%;
+      width: 86.8%;
     }
   }
 }
@@ -219,12 +251,14 @@
     align-items: center;
     width: 74.86%;
 
-    &--phone::after {
-      right: 26px;
+    &--phone svg {
+      right: 27px;
+      bottom: 16px;
     }
 
-    &--email::after {
+    &--email svg {
       right: 22px;
+      bottom: 14px;
     }
 
     &--full-name {
@@ -233,14 +267,16 @@
   }
 
   @media (min-width: $vp-1150) {
-    width: 84.54%;
+    width: 86.5%;
 
-    &--phone::after {
+    &--phone svg {
       right: 8px;
+      bottom: 19px;
     }
 
-    &--email::after {
-      right: 4px;
+    &--email svg {
+      right: 5px;
+      bottom: 18px;
     }
 
     &--full-name {
@@ -251,15 +287,15 @@
 
 .form-group__control-mark {
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 45%;
+  left: 0px;
 
   border: 2px solid $color-default-black;
   transform: translateY(-50%);
 
   &--radio {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
 
     border-radius: 50%;
   }
@@ -279,13 +315,13 @@
 
   @media (min-width: $vp-768) {
     &--radio {
-      width: 52px;
-      height: 52px;
-
-      border-radius: 50%;
+      left: 3px;
+      width: 48px;
+      height: 48px;
     }
 
     &--checkbox {
+      left: -1px;
       width: 52px;
       height: 52px;
     }
@@ -358,7 +394,7 @@
   line-height: 18px;
 
   @media (min-width: $vp-768) {
-    padding-left: 82px;
+    padding-left: 80px;
 
     font-size: 19px;
     line-height: 18px;
@@ -421,6 +457,10 @@
 
   @media (min-width: $vp-768) {
     text-indent: 18px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 }
 
@@ -482,8 +522,6 @@
 }
 
 .form-group__type-item:not(:last-child) {
-  margin-bottom: 11px;
-
   @media (min-width: $vp-768) {
     margin: 0;
   }
@@ -504,7 +542,7 @@
 }
 
 .form-group__color-item:not(:last-child) {
-  margin-bottom: 23px;
+  margin-bottom: 9px;
 
   @media (min-width: $vp-768) {
     margin: 0;
@@ -512,7 +550,7 @@
 }
 
 .form-group__full-name-item:not(:last-child) {
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 
   @media (min-width: $vp-768) {
     margin-bottom: 24px;;

@@ -1,18 +1,21 @@
 .product {
-  padding: 30px 30px 36px;
+  padding: 30px 30px 42px;
 
-  background-image: url("../img/svg/zigzag-line-small.svg");
+  background-image: url("../img/svg/zigzag-mobile.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 
   @media (min-width: $vp-768) {
-    padding: 40px 50px 69px;
+    padding: 41px 50px 69px;
 
-    background-image: url("../img/svg/zigzag-line-big.svg");
+    background-image: url("../img/svg/zigzag-tablet.svg");
   }
 
   @media (min-width: $vp-1150) {
     padding: 54px 50px 96px 225px;
+
+    background-image: url("../img/svg/zigzag-desktop.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -98,8 +101,8 @@
   }
 
   @media (min-width: $vp-1150) {
-    top: calc(61px + 57px/2);
-    left: -143px;
+    top: 84px;
+    left: -129px;
 
     margin: 0;
 
@@ -117,6 +120,7 @@
     margin: 0 0 48px;
 
     font-size: 17px;
+    line-height: 30px;
   }
 
   @media (min-width: $vp-1150) {
@@ -129,7 +133,7 @@
   flex-direction: column;
   margin: 0 0 41px;
 
-  gap: 22px;
+  gap: 20px;
 
   @media (min-width: $vp-768) {
     margin: 0 0 70px;
@@ -175,6 +179,7 @@
 
 .product__picture-wrapper {
   @media (min-width: $vp-768) {
+    align-self: end;
     grid-column: 2/-1;
     grid-row: 2/-1;
   }

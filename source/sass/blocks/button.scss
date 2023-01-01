@@ -12,6 +12,7 @@
   background-color: $color-default-white;
   border: none;
   outline: 2px solid $color-charcoal;
+  outline-offset: -2px;
   cursor: pointer;
 
   &:hover {

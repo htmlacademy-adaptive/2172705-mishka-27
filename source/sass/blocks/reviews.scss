@@ -1,18 +1,21 @@
 .reviews {
-  padding: 30px 30px 45px;
+  padding: 29px 30px 51px 30px;
 
-  background-image: url("../img/svg/zigzag-line-small.svg");
+  background-image: url("../img/svg/zigzag-mobile.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 
   @media (min-width: $vp-768) {
-    padding: 82px 50px 132px;
+    padding: 77px 50px 137px;
 
-    background-image: url("../img/svg/zigzag-line-big.svg");
+    background-image: url("../img/svg/zigzag-tablet.svg");
   }
 
   @media (min-width: $vp-1150) {
-    padding: 78px 50px 163px 224px;
+    padding: 78px 50px 190px 224px;
+
+    background-image: url("../img/svg/zigzag-desktop.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -25,7 +28,7 @@
     grid-template-areas: "title . write-button"
     "text text text"
     "author . slider-buttons";
-    grid-template-columns: max-content 1fr 0.69fr;
+    grid-template-columns: max-content 1fr 0.73fr;
 
     &::before {
       content: "";
@@ -38,11 +41,14 @@
       height: 457px;
 
       background-image: url("../img/jpg/reviews-background-tablet&desktop@1x.jpg");
+      background-repeat: no-repeat;
     }
 
     @media (min-resolution: 2dppx) {
+      &::before {
       background-image: url("../img/jpg/reviews-background-tablet&desktop@2x.jpg");
       background-size: 350px auto;
+      }
     }
   }
 
@@ -63,6 +69,7 @@
   line-height: 30px;
 
   @media (min-width: $vp-768) {
+    align-self: end;
     margin: 0;
 
     font-size: 43px;
@@ -85,7 +92,7 @@
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
-    margin: 40px 0 61px;
+    margin: 41px 0 61px;
 
     font-size: 17px;
 
@@ -93,13 +100,13 @@
   }
 
   @media (min-width: $vp-1150) {
-    margin: 39px 70px 44px 0;
+    margin: 34px 70px 44px 0;
   }
 }
 
 .reviews__author-info {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   @media (min-width: $vp-768) {
     margin: 0;
@@ -110,6 +117,7 @@
 
 .reviews__author-name {
   display: block;
+  margin-bottom: 4px;
 
   font-style: normal;
   font-weight: 700;
@@ -118,7 +126,7 @@
     font-size: 18px;
   }
 
-  @media (min-width: $vp-768) {
+  @media (min-width: $vp-1150) {
     font-size: 17px;
   }
 }
@@ -188,6 +196,10 @@
 
   @media (min-width: $vp-768) {
     border: none;
+
+    &::before {
+      top: 55%;
+    }
   }
 }
 
@@ -197,10 +209,12 @@
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
-    align-self: center;
-    width: 100%;
     margin: 0;
 
     grid-area: write-button;
+  }
+
+  @media (min-width: $vp-1150) {
+    align-self: start;
   }
 }
