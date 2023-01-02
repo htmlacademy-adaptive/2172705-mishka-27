@@ -61,7 +61,7 @@
 .footer__socials-list {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   min-height: 80px;
   margin: 0;
   padding: 25px 30px 28px;
@@ -71,8 +71,8 @@
   gap: 13%;
 
   @media (min-width: $vp-768) {
-    justify-content: space-between;
-    min-width: 142px;
+    max-width: 142px;
+    gap: 31px;
     min-height: auto;
     padding: 0;
   }
