@@ -39,6 +39,7 @@
 
   @media (min-width: $vp-1150) {
     margin-bottom: 40px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -53,8 +54,8 @@
   @media (min-width: $vp-768) {
     display: grid;
 
-    row-gap: 57px;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 57px;
   }
 }
 
@@ -168,6 +169,7 @@
 
     &--likes {
       top: 0;
+
       order: 5;
     }
 
@@ -180,7 +182,6 @@
     }
 
     &--packaging {
-
       order: 6;
     }
   }

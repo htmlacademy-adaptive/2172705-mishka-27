@@ -180,6 +180,7 @@
 .product__picture-wrapper {
   @media (min-width: $vp-768) {
     align-self: end;
+
     grid-column: 2/-1;
     grid-row: 2/-1;
   }

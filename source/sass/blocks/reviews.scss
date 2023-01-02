@@ -46,8 +46,8 @@
 
     @media (min-resolution: 2dppx) {
       &::before {
-      background-image: url("../img/jpg/reviews-background-tablet&desktop@2x.jpg");
-      background-size: 350px auto;
+        background-image: url("../img/jpg/reviews-background-tablet&desktop@2x.jpg");
+        background-size: 350px auto;
       }
     }
   }

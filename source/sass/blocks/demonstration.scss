@@ -188,7 +188,8 @@
   line-height: 16px;
 
   @media (min-width: $vp-768) {
-    font-size: 17px;
     max-width: 700px;
+
+    font-size: 17px;
   }
 }

@@ -288,7 +288,7 @@
 .form-group__control-mark {
   position: absolute;
   top: 45%;
-  left: 0px;
+  left: 0;
 
   border: 2px solid $color-default-black;
   transform: translateY(-50%);
@@ -316,12 +316,14 @@
   @media (min-width: $vp-768) {
     &--radio {
       left: 3px;
+
       width: 48px;
       height: 48px;
     }
 
     &--checkbox {
       left: -1px;
+
       width: 52px;
       height: 52px;
     }
@@ -499,7 +501,9 @@
   }
 
   @media (min-width: $vp-768) {
-    display: block;
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 }
 
