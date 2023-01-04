@@ -13,7 +13,7 @@
 
   @media (min-width: $vp-768) {
     background-image: url("../img/jpg/index-intro-tablet@1x.jpg");
-    background-position: center -35px;
+    background-position: center -45px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/jpg/index-intro-tablet@2x.jpg");
@@ -42,7 +42,7 @@
     }
 
     &::after {
-      height: 24px;
+      height: 34px;
 
       background-image: url("../img/svg/intro-divider-desktop.svg");
     }
@@ -207,14 +207,23 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 25px 167px 34px 36px;
+    padding: 25px 167px 46px 36px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &--interior::after {
+      top: 30px;
+    }
+
+    &--toy::after {
+      top: 31px;
+      right: 33px;
+    }
   }
 
   @media (min-width: $vp-1150) {
-    padding: 25px 350px 34px 36px;
+    padding: 25px 350px 51px 36px;
 
     font-size: 20px;
     line-height: 30px;

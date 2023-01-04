@@ -1,12 +1,12 @@
 .about {
-  padding: 30px;
+  padding: 31px 30px 30px 29px;
 
   @media (min-width: $vp-768) {
     padding: 55px 50px 83px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 68px 49px 90px 225px;
+    padding: 68px 225px 90px 225px;
   }
 }
 
@@ -24,20 +24,22 @@
 }
 
 .about__title {
-  margin: 0 0 28px;
+  margin: 0;
 
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 41px;
+    margin-bottom: 44px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $vp-1150) {
+    margin-bottom: 40px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -52,8 +54,8 @@
   @media (min-width: $vp-768) {
     display: grid;
 
-    gap: 55px;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 57px;
   }
 }
 
@@ -93,7 +95,7 @@
   &--likes::before {
     content: "";
     position: absolute;
-    top: 28px;
+    top: 34px;
     left: 7px;
 
     width: 34px;
@@ -105,8 +107,8 @@
   &--feelings::before {
     content: "";
     position: absolute;
-    top: 28px;
-    left: 0;
+    top: 31px;
+    left: 3px;
 
     width: 35px;
     height: 34px;
@@ -117,7 +119,7 @@
   &--support::before {
     content: "";
     position: absolute;
-    top: 28px;
+    top: 32px;
     left: -7px;
 
     width: 55px;
@@ -129,8 +131,8 @@
   &--packaging::before {
     content: "";
     position: absolute;
-    top: 28px;
-    left: 0;
+    top: 30px;
+    left: 3px;
 
     width: 33px;
     height: 32px;
@@ -139,13 +141,22 @@
   }
 
   @media (min-width: $vp-768) {
-    padding-top: 55px;
+    align-self: end;
+    padding-top: 54px;
 
     font-size: 20px;
     line-height: 22px;
 
     &::before {
       top: 0;
+    }
+
+    &--likes::before {
+      top: 5px;
+    }
+
+    &--support::before {
+      top: 2px;
     }
 
     &--ecology {
@@ -157,8 +168,9 @@
     }
 
     &--likes {
+      top: 0;
+
       order: 5;
-      padding-top: 48px;
     }
 
     &--feelings {
@@ -172,5 +184,9 @@
     &--packaging {
       order: 6;
     }
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-top: 54px;
   }
 }

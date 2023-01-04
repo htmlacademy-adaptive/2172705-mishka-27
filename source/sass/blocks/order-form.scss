@@ -2,16 +2,16 @@
   padding: 17px 30px 55px;
 
   @media (min-width: $vp-768) {
-    padding: 54px 0 50px;
+    padding: 54px 0 47px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 99px 0 50px;
+    padding: 99px 0 47px;
   }
 }
 
 .order-form__intro-text {
-  margin: 0 0 29px;
+  margin: 0 0 25px;
 
   font-size: 13px;
   color: $color-charcoal;
@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    margin: 0 223px 13px 225px;
+    margin: 0 175px 13px 175px;
 
     font-size: 17px;
     line-height: 30px;
@@ -37,7 +37,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 48px 225px 52px 97px;
+    padding: 50px 225px 50px 114px;
   }
 }
 
@@ -46,11 +46,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 50px 0;
+    padding: 0 50px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 48px 225px 0;
+    padding: 0 175px;
   }
 }
 
@@ -76,9 +76,18 @@
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+  padding: 18px;
+
+  font-size: 17px;
+  line-height: 16px;
 
   @media (min-width: $vp-768) {
     width: 34.43%;
+    margin: 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    width: 32.86%;
     margin: 0;
   }
 }

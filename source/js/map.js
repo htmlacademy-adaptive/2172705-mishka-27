@@ -1,6 +1,6 @@
 let imageMap = document.querySelector(".contacts__map");
 
-imageMap.classList.remove("contacts__map--nojs");
+imageMap.classList.remove("contacts__map--no-js");
 
 ymaps.ready(function () {
   let myMap = new ymaps.Map('map', {
@@ -28,7 +28,7 @@ ymaps.ready(function () {
           iconImageSize: [67, 100],
           // Смещение левого верхнего угла иконки относительно
           // её "ножки" (точки привязки).
-          iconImageOffset: [-33, -100]
+          iconImageOffset: [-21, -85]
       });
 
   myMap.geoObjects
