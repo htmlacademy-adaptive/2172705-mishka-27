@@ -2,21 +2,21 @@
   position: relative;
 
   background-color: $color-snow;
-  background-image: url("../img/jpg/index-intro-mobile@1x.jpg");
+  background-image: url("../img/background/index-intro/index-intro-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -18px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/jpg/index-intro-mobile@2x.jpg");
+    background-image: url("../img/background/index-intro/index-intro-mobile@2x.jpg");
     background-size: 320px auto;
   }
 
   @media (min-width: $vp-768) {
-    background-image: url("../img/jpg/index-intro-tablet@1x.jpg");
+    background-image: url("../img/background/index-intro/index-intro-tablet@1x.jpg");
     background-position: center -45px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/jpg/index-intro-tablet@2x.jpg");
+      background-image: url("../img/background/index-intro/index-intro-tablet@2x.jpg");
       background-size: 768px auto;
     }
 
@@ -29,22 +29,23 @@
       width: 100%;
       height: 24px;
 
-      background-image: url("../img/svg/intro-divider-tablet.svg");
+      background-image: url("../img/background/index-intro/index-intro-divider-tablet.svg");
+      background-position: center;
     }
   }
 
   @media (min-width: $vp-1150) {
-    background-image: url("../img/jpg/index-intro-desktop@1x.jpg");
+    background-image: url("../img/background/index-intro/index-intro-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/jpg/index-intro-desktop@2x.jpg");
+      background-image: url("../img/background/index-intro/index-intro-desktop@2x.jpg");
       background-size: 1150px auto;
     }
 
     &::after {
-      height: 34px;
+      height: 33px;
 
-      background-image: url("../img/svg/intro-divider-desktop.svg");
+      background-image: url("../img/background/index-intro/index-intro-divider-desktop.svg");
     }
   }
 }
@@ -189,7 +190,7 @@
     width: 40px;
     height: 62px;
 
-    background-image: url("../img/svg/index-intro-interior.svg");
+    background-image: url("../img/background/index-intro/index-intro-interior.svg");
     opacity: 0.5;
   }
 
@@ -202,7 +203,7 @@
     width: 60px;
     height: 60px;
 
-    background-image: url("../img/svg/index-intro-toy.svg");
+    background-image: url("../img/background/index-intro/index-intro-toy.svg");
     opacity: 0.5;
   }
 

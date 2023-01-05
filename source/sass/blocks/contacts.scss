@@ -2,7 +2,7 @@
   padding: 38px 0;
 
   @media (min-width: $vp-768) {
-    padding: 68px 0 57px;
+    padding: 68px 0 55px;
   }
 
   @media (min-width: $vp-1150) {
@@ -22,7 +22,7 @@
       width: 47px;
       height: 81px;
 
-      background-image: url("../img/svg/contacts-flag.svg");
+      background-image: url("../img/background/contacts/contacts-flag.svg");
     }
   }
 
@@ -168,7 +168,7 @@
     margin: 0 auto;
   }
 
-  &--no-js::after {
+  &.no-js::after {
     content: "";
     position: absolute;
     top: 31.94%;
@@ -177,18 +177,18 @@
     width: 67px;
     height: 100px;
 
-    background-image: url("../img/svg/map-pin.svg");
+    background-image: url("../img/background/contacts/contacts-map-pin.svg");
     transform: translateX(-50%);
   }
 
-  &--no-js img {
+  &.no-js img {
     display: block;
   }
 
   @media (min-width: $vp-768) {
-    &--no-js::after {
+    &.no-js::after  {
       top: 30.42%;
-      left: 51%;
+      left: 51.9%;
 
       transform: translateX(-50%);
     }
@@ -202,7 +202,7 @@
     grid-column: 2/-1;
     grid-row: 1/-1;
 
-    &--no-js::after {
+    &.no-js::after {
       top: 31.95%;
       left: 51%;
 

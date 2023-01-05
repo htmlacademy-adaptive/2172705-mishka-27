@@ -1,9 +1,9 @@
-let imageMap = document.querySelector(".contacts__map");
+const imageMap = document.querySelector(".contacts__map");
 
-imageMap.classList.remove("contacts__map--no-js");
+imageMap.classList.remove("no-js");
 
 ymaps.ready(function () {
-  let myMap = new ymaps.Map('map', {
+  const myMap = new ymaps.Map('map', {
           center: [59.938635, 30.323118],
           zoom: 17,
           controls: []
@@ -23,7 +23,7 @@ ymaps.ready(function () {
           // Необходимо указать данный тип макета.
           iconLayout: 'default#image',
           // Своё изображение иконки метки.
-          iconImageHref: '../img/svg/map-pin.svg',
+          iconImageHref: '../img/background/contacts/contacts-map-pin.svg',
           // Размеры метки.
           iconImageSize: [67, 100],
           // Смещение левого верхнего угла иконки относительно

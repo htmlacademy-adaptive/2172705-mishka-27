@@ -364,14 +364,14 @@
   width: 24px;
   height: 17px;
 
-  background-image: url("../img/svg/form-checkbox-small.svg");
+  background-image: url("../img/background/form-group/form-group-checkbox-small.svg");
   transform: translateX(-50%) translateY(-50%);
 
   @media (min-width: $vp-768) {
     width: 32px;
     height: 22px;
 
-    background-image: url("../img/svg/form-checkbox-big.svg");
+    background-image: url("../img/background/form-group/form-group-checkbox-big.svg");
   }
 }
 

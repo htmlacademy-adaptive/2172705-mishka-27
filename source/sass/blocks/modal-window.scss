@@ -1,7 +1,7 @@
 .modal-container {
   display: none;
 
-  &--open {
+  &.is-open {
     position: fixed;
     top: 0;
     left: 0;
