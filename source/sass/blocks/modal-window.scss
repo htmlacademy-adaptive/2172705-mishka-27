@@ -73,9 +73,6 @@
 
   gap: 7px;
   grid-template-columns: repeat(3, 1fr);
-
-  @media (min-width: $vp-768) {
-  }
 }
 
 .modal-window__control {

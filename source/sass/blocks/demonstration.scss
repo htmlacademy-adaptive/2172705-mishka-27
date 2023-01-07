@@ -87,6 +87,7 @@
 
 .demonstration__video {
   position: relative;
+
   @media (min-width: $vp-768) {
     order: -1;
   }

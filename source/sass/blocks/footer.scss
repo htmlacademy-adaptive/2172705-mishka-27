@@ -16,6 +16,7 @@
 
 .footer__wrapper {
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -27,7 +28,6 @@
 
     background-color: $color-whisper-mod;
   }
-
 
   @media (min-width: $vp-768) {
     display: flex;
@@ -68,14 +68,14 @@
 
   list-style: none;
 
-  gap: 13%;
+  gap: 11.15%;
 
   @media (min-width: $vp-768) {
-    max-width: 142px;
+    max-width: 143px;
     min-height: auto;
     padding: 0;
 
-    gap: 31px;
+    gap: 29px;
   }
 }
 

@@ -1,6 +1,7 @@
 .zigzag {
   background-image: url("../img/background/common/zigzag-mobile.svg");
   background-repeat: repeat-x;
+
   background-position: bottom;
 
   @media (min-width: $vp-768) {
