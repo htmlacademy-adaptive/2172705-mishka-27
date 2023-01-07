@@ -256,11 +256,6 @@
   &:hover .form-group__control-input:disabled ~ * {
     border-color: rgba($color-charcoal, 0.1);
   }
-  //------------ПОЧЕМУ-ТО НЕ РАБОТАЕТ :С
-  &:hover .form-group__control-input:checked:disabled ~ *::after,
-  & .form-group__control-input:checked:disabled ~ *::before {
-    background-image: none;
-  }
 
   @media (min-width: $vp-768) {
     display: flex;
