@@ -1,7 +1,7 @@
 .modal-container {
   display: none;
 
-  &--open {
+  &.is-open {
     position: fixed;
     top: 0;
     left: 0;
@@ -73,9 +73,6 @@
 
   gap: 7px;
   grid-template-columns: repeat(3, 1fr);
-
-  @media (min-width: $vp-768) {
-  }
 }
 
 .modal-window__control {

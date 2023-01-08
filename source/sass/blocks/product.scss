@@ -1,21 +1,12 @@
 .product {
   padding: 30px 30px 42px;
 
-  background-image: url("../img/svg/zigzag-mobile.svg");
-  background-repeat: repeat-x;
-  background-position: bottom;
-
   @media (min-width: $vp-768) {
     padding: 41px 50px 69px;
-
-    background-image: url("../img/svg/zigzag-tablet.svg");
   }
 
   @media (min-width: $vp-1150) {
     padding: 54px 50px 96px 225px;
-
-    background-image: url("../img/svg/zigzag-desktop.svg");
-    background-repeat: no-repeat;
   }
 }
 
@@ -24,7 +15,7 @@
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
-    max-width: none;
+    max-width: 950px;
   }
 
   @media (min-width: $vp-1150) {
@@ -34,6 +25,7 @@
 
 .product__wrapper {
   position: relative;
+
   @media (min-width: $vp-768) {
     display: grid;
 
