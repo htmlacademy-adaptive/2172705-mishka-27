@@ -1,8 +1,8 @@
 .product {
-  padding: 30px 30px 42px;
+  padding: 30px 30px 42px 30px;
 
   @media (min-width: $vp-768) {
-    padding: 41px 50px 69px;
+    padding: 41px 50px 69px 50px;
   }
 
   @media (min-width: $vp-1150) {
@@ -50,7 +50,7 @@
   line-height: 30px;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 38px 0;
+    margin: 0 150px 38px 0;
 
     font-size: 43px;
     line-height: 50px;
@@ -87,6 +87,7 @@
     right: 27px;
 
     width: min-content;
+    margin: 0;
 
     line-height: 17px;
     text-align: center;
@@ -95,8 +96,6 @@
   @media (min-width: $vp-1150) {
     top: 84px;
     left: -129px;
-
-    margin: 0;
 
     transform: translateY(-50%);
   }
@@ -146,12 +145,18 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -16px;
+    bottom: -13px;
 
     width: 100%;
     height: 1px;
 
     background-color: $color-whisper;
+  }
+
+  @media (min-width: $vp-768) {
+    &::after {
+      bottom: -12px;
+    }
   }
 }
 

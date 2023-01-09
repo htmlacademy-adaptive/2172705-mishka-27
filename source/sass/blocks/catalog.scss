@@ -77,7 +77,6 @@
   }
 
   @media (min-width: $vp-1150) {
-    flex-grow: 1;
     padding: 27px 28px 12px;
   }
 }
@@ -138,7 +137,7 @@
   position: relative;
 
   margin-top: auto;
-  padding: 22px 50px 26px 28px;
+  padding: 22px 70px 26px 28px;
 
   &::before {
     content: "";
@@ -153,7 +152,7 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 24px 50px 26px 34px;
+    padding: 24px 70px 26px 34px;
 
     &::before {
       right: 33px;
@@ -162,7 +161,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 23px 50px 26px 27px;
+    padding: 23px 70px 26px 27px;
 
     &::before {
       right: 30px;

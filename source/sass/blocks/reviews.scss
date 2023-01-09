@@ -2,10 +2,12 @@
   padding: 29px 30px 51px 30px;
 
   @media (min-width: $vp-768) {
+    min-height: 540px;
     padding: 77px 50px 137px;
   }
 
   @media (min-width: $vp-1150) {
+    min-height: 545px;
     padding: 78px 50px 190px 224px;
   }
 }
@@ -26,7 +28,7 @@
     grid-template-areas: "title . write-button"
       "text text text"
       "author . slider-buttons";
-    grid-template-columns: max-content 1fr 0.73fr;
+    grid-template-columns: auto 1fr 0.73fr;
 
     &::before {
       content: "";
@@ -58,7 +60,7 @@
 }
 
 .reviews__title {
-  margin: 0 0 14px;
+  margin: 0 0 14px 0;
 
   font-weight: 700;
   font-size: 25px;
@@ -66,7 +68,7 @@
 
   @media (min-width: $vp-768) {
     align-self: end;
-    margin: 0;
+    margin: 3px 0 41px 0;
 
     font-size: 43px;
     line-height: 50px;
@@ -75,20 +77,22 @@
   }
 
   @media (min-width: $vp-1150) {
+    margin: 0 0 34px 0;
+
     font-size: 53px;
     line-height: 57px;
   }
 }
 
 .reviews__text {
-  margin: 0 0 33px;
+  margin: 0 0 33px 0;
 
   font-size: 15px;
   line-height: 30px;
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
-    margin: 41px 0 61px;
+    margin: 0 0 61px 0;
 
     font-size: 17px;
 
@@ -96,7 +100,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    margin: 34px 70px 44px 0;
+    margin: 0 70px 44px 0;
   }
 }
 
@@ -205,12 +209,10 @@
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
+    align-self: start;
+    min-width: 175px;
     margin: 0;
 
     grid-area: write-button;
-  }
-
-  @media (min-width: $vp-1150) {
-    align-self: start;
   }
 }
