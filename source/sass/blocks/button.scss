@@ -74,8 +74,9 @@
   }
 
   &:disabled {
-    background-color: rgba($color-default-black, 0.3);
     color: $color-default-white;
+
+    background-color: rgba($color-default-black, 0.3);
     opacity: 0.3;
   }
 

@@ -78,6 +78,7 @@
 
   @media (min-width: $vp-1150) {
     margin: 0 0 34px 0;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -208,10 +209,10 @@
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
+    align-self: start;
     min-width: 175px;
     margin: 0;
 
     grid-area: write-button;
-    align-self: start;
   }
 }

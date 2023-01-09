@@ -82,12 +82,12 @@
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
-    margin: 0;
     position: absolute;
     top: 5px;
     right: 27px;
 
     width: min-content;
+    margin: 0;
 
     line-height: 17px;
     text-align: center;
