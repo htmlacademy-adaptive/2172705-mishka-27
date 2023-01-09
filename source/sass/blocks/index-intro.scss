@@ -167,14 +167,14 @@
   width: 100%;
 
   @media (min-width: $vp-768) {
-    width: 50%;
+    flex: 1 1 50%;
   }
 }
 
 .index-intro__link {
   display: block;
   min-height: 103px;
-  padding: 24px 30px;
+  padding: 24px 100px 24px 30px;
 
   font-weight: 700;
   font-size: 19px;

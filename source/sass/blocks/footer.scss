@@ -15,28 +15,10 @@
 }
 
 .footer__wrapper {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    left: 30px;
-
-    height: 1px;
-
-    background-color: $color-whisper-mod;
-  }
-
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &::after {
-      display: none;
-    }
   }
 }
 
@@ -59,6 +41,7 @@
 }
 
 .footer__socials-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -68,14 +51,31 @@
 
   list-style: none;
 
-  gap: 11.15%;
+  column-gap: 11.15%;
+  row-gap: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    left: 30px;
+    bottom: 0;
+
+    height: 1px;
+
+    background-color: $color-whisper-mod;
+  }
 
   @media (min-width: $vp-768) {
-    max-width: 143px;
+    max-width: 200px;
     min-height: auto;
     padding: 0;
 
-    gap: 29px;
+    column-gap: 29px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -111,6 +111,11 @@
 
   gap: 27px;
 
+  & svg {
+    min-width: 27px;
+    min-height: 35px;
+  }
+
   &:hover svg {
     fill: $color-puerto-rico-mod;
   }
@@ -121,6 +126,7 @@
 
   @media (min-width: $vp-768) {
     min-height: auto;
+    max-width: 200px;
     padding: 0;
   }
 }

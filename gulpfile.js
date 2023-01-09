@@ -52,7 +52,8 @@ const minifyScripts = () => {
     .pipe(rename(function(path) {
       path.extname = '.min.js'
     }))
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
 }
 
 // Images
