@@ -73,6 +73,7 @@
   }
 
   @media (min-width: $vp-768) {
+    &.is-open .header__nav-wrapper,
     & .header__nav-wrapper {
       display: grid;
     }

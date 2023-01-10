@@ -18,7 +18,7 @@
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
   }
 }
 
@@ -69,7 +69,7 @@
 
   @media (min-width: $vp-768) {
     max-width: 200px;
-    min-height: auto;
+    min-height: 35px;
     padding: 0;
 
     column-gap: 29px;
@@ -100,7 +100,6 @@
 .footer__developer-link {
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 80px;
   padding: 23px 21.56%;
 
@@ -113,6 +112,8 @@
   gap: 27px;
 
   & svg {
+    display: grid;
+    align-self: center;
     min-width: 27px;
     min-height: 35px;
   }
@@ -130,4 +131,8 @@
     min-height: auto;
     padding: 0;
   }
+}
+
+.footer__developer-text {
+  padding-top: 8px;
 }

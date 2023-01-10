@@ -28,7 +28,7 @@
   @media (min-width: $vp-1150) {
     display: grid;
 
-    grid-template-columns: auto auto;
+    grid-template-columns: 65.05% 34.95%;
     grid-template-rows: repeat(3, min-content);
   }
 }
@@ -92,7 +92,7 @@
     order: -1;
   }
 
-  @media (min-width: $vp-768) {
+  @media (min-width: $vp-1150) {
     align-self: center;
 
     grid-row: 1/-1;
@@ -107,7 +107,7 @@
   object-fit: contain;
 
   @media (min-width: $vp-768) {
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0 auto;
   }
