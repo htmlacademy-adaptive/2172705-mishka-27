@@ -1,4 +1,4 @@
-const modalContainer = document.querySelector(".modal-container");
+const modalContainer = document.querySelector(".modal");
 
 const openModal = () => {
   modalContainer.classList.add("is-open");
@@ -25,7 +25,7 @@ const onDocumentKeydown = (evt) => {
 };
 
 const onModalClick = (evt) => {
-  if(!evt.target.closest('.modal-window')) {
+  if(!evt.target.closest('.modal__content')) {
     closeModal();
   }
 };
