@@ -3,27 +3,27 @@ const imageMap = document.querySelector(".contacts__map");
 imageMap.classList.remove("no-js");
 
 ymaps.ready(function () {
-  const myMap = new ymaps.Map('map', {
+  const myMap = new ymaps.Map("map", {
           center: [59.938635, 30.323118],
           zoom: 17,
           controls: []
       }, {
-          searchControlProvider: 'yandex#search'
+          searchControlProvider: "yandex#search"
       }),
 
       // Создаём макет содержимого.
       MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          "<div style='color: #FFFFFF; font-weight: bold;'>$[properties.iconContent]</div>"
       ),
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          hintContent: 'Мишка',
+          hintContent: "Мишка",
       }, {
           // Опции.
           // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
+          iconLayout: "default#image",
           // Своё изображение иконки метки.
-          iconImageHref: '../img/background/contacts/contacts-map-pin.svg',
+          iconImageHref: "../img/background/contacts/contacts-map-pin.svg",
           // Размеры метки.
           iconImageSize: [67, 100],
           // Смещение левого верхнего угла иконки относительно
